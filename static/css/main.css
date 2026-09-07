@@ -92,7 +92,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 8rem 0;
+    padding: 4rem 0;
 }
 
 .hero h1 {
@@ -712,7 +712,7 @@ footer p {
     }
 
     .hero-with-image {
-        padding: 4rem 0;
+        padding: 2.5rem 0;
     }
 
     .person-header {
