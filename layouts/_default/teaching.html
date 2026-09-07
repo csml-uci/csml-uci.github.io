@@ -1,0 +1,37 @@
+{{ define "main" }}
+<div class="container">
+    <h1>{{ .Title }}</h1>
+    {{ $courses := .Site.Data.courses }}
+
+    {{ with $courses.current }}
+    <section class="teaching-section">
+        <h2>Current Courses</h2>
+        {{ range . }}
+        <div class="course">
+            <h3>{{ .title }}</h3>
+            <p class="course-meta">{{ .level }}{{ with .term }} | {{ . }}{{ end }} | Instructor: {{ $.Site.Params.pi_name }}</p>
+            {{ with .description }}<p>{{ . }}</p>{{ end }}
+            {{ with .website }}<p><a href="{{ . }}" class="course-link">Course website</a></p>{{ end }}
+        </div>
+        {{ end }}
+    </section>
+    {{ end }}
+
+    {{ with $courses.past }}
+    <section class="teaching-section">
+        <h2>{{ $courses.past_title | default "Past Courses" }}</h2>
+        <ul class="past-courses">
+            {{ range . }}
+            <li>{{ .title }}{{ with .level }} ({{ . }}){{ end }}</li>
+            {{ end }}
+        </ul>
+    </section>
+    {{ end }}
+
+    {{ with .Content }}
+    <section class="teaching-section content">
+        {{ . }}
+    </section>
+    {{ end }}
+</div>
+{{ end }}

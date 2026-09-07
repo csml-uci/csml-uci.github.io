@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{- $title := .Site.Params.lab_name }}
+    {{- if not .IsHome }}{{ $title = printf "%s - %s" .Title .Site.Params.lab_name }}{{ end }}
+    {{- $desc := .Site.Params.description }}
+    {{- with .Params.description }}{{ $desc = . | plainify | truncate 160 }}
+    {{- else }}{{ if and (not .IsHome) .Summary }}{{ $desc = .Summary | plainify | truncate 160 }}{{ end }}{{ end }}
+    <title>{{ $title }}</title>
+    <meta name="description" content="{{ $desc }}">
+    <meta property="og:title" content="{{ $title }}">
+    <meta property="og:description" content="{{ $desc }}">
+    <meta property="og:type" content="website">
+    {{- with .Params.image }}
+    <meta property="og:image" content="{{ absURL (strings.TrimPrefix "/" .) }}">
+    {{- end }}
+    <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+    {{- with .OutputFormats.Get "RSS" }}
+    <link rel="alternate" type="application/rss+xml" title="{{ $.Site.Params.lab_name }}" href="{{ .Permalink }}">
+    {{- end }}
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="navbar">
+        <nav class="container" aria-label="Main navigation">
+            <a href="{{ "" | relURL }}" class="logo">{{ .Site.Params.lab_name }}</a>
+            <ul class="nav-links">
+                {{- $current := .RelPermalink }}
+                {{- $home := "/" | relURL }}
+                {{- range .Site.Menus.main }}
+                {{- $url := .URL | relURL }}
+                {{- $active := or (eq $current $url) (and (ne $url $home) (hasPrefix $current $url)) }}
+                <li><a href="{{ $url }}"{{ if $active }} class="active" aria-current="page"{{ end }}>{{ .Name }}</a></li>
+                {{- end }}
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; {{ now.Year }} {{ .Site.Params.lab_name }} - {{ .Site.Params.university }}</p>
+            <p>{{ .Site.Params.department }}</p>
+        </div>
+    </footer>
+</body>
+</html>

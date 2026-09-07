@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="container">
+    <h1>{{ .Title }}</h1>
+    {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
+
+    <div class="card-list">
+        {{ range .Pages }}
+        <article class="card">
+            {{ if not .Date.IsZero }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>{{ end }}
+            <h2 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            {{ with .Summary }}<p>{{ . | plainify | truncate 220 }}</p>{{ end }}
+            <a href="{{ .Permalink }}" class="read-more">Read more</a>
+        </article>
+        {{ else }}
+        <p>No posts yet.</p>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

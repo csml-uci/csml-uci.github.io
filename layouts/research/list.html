@@ -1,0 +1,48 @@
+{{ define "main" }}
+<div class="container">
+    <h1>{{ .Title }}</h1>
+    {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
+
+    {{/* Pages are ordered by the "order" front-matter field. A page without
+         "active" counts as current. */}}
+    {{ $pages := sort .Pages "Params.order" }}
+    {{ $currentProjects := where $pages "Params.active" "ne" false }}
+    {{ $pastProjects := where $pages "Params.active" false }}
+
+    {{ if $currentProjects }}
+    <section class="research-section">
+        <h2>Current Projects</h2>
+        <div class="research-grid">
+            {{ range $currentProjects }}
+            <div class="research-card">
+                {{ with .Params.image }}
+                <img src="{{ partial "url.html" . }}" alt="" loading="lazy">
+                {{ end }}
+                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                <p>{{ .Params.description | plainify | truncate 150 }}</p>
+            </div>
+            {{ end }}
+        </div>
+    </section>
+    {{ end }}
+
+    {{ if $pastProjects }}
+    <section class="research-section">
+        <h2>Past Projects</h2>
+        <div class="past-projects-list">
+            {{ range $pastProjects }}
+            <div class="past-project-item">
+                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                {{ with .Params.funding }}
+                <p class="project-funding">
+                    <strong>Funding:</strong>
+                    {{ range $index, $funder := . }}{{ if $index }}, {{ end }}{{ $funder }}{{ end }}
+                </p>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+    </section>
+    {{ end }}
+</div>
+{{ end }}

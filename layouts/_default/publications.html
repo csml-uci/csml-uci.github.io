@@ -1,0 +1,29 @@
+{{ define "main" }}
+<div class="container">
+    <h1>{{ .Title }}</h1>
+    {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
+
+    {{ $pubs := .Site.Data.publications }}
+    {{ $pending := where $pubs "status" "!=" "published" }}
+    {{ $published := where $pubs "status" "published" }}
+
+    {{ if $pending }}
+    <section class="publications-year">
+        <h2>Submitted and in press</h2>
+        {{ range $pending }}{{ partial "publication.html" . }}{{ end }}
+    </section>
+    {{ end }}
+
+    {{ $years := slice }}
+    {{ range $published }}{{ $years = $years | append .year }}{{ end }}
+    {{ $years = sort ($years | uniq) "value" "desc" }}
+
+    {{ range $years }}
+    {{ $year := . }}
+    <section class="publications-year">
+        <h2>{{ $year }}</h2>
+        {{ range where $published "year" $year }}{{ partial "publication.html" . }}{{ end }}
+    </section>
+    {{ end }}
+</div>
+{{ end }}

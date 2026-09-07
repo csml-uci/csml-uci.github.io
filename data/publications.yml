@@ -1,0 +1,1353 @@
+# Generated from publications.bib by scripts/bib_to_yaml.py.
+# Do not edit by hand: edit publications.bib and re-run the script.
+
+- title: "A finite element formulation for incompressible viscous flow based on the principle of minimum pressure gradient"
+  authors: "J. J. Rimoli"
+  authors_html: "<strong>J. J. Rimoli</strong>"
+  year: 2026
+  status: "published"
+  type: "journal"
+  venue: "Computer Methods in Applied Mechanics and Engineering"
+  volume: "461"
+  pages: "119170"
+  doi: "10.1016/j.cma.2026.119170"
+  url: "https://arxiv.org/abs/2603.02807"
+  url_label: "arXiv"
+  key: "rimoli2026j"
+  bibtex: |
+    @article{rimoli2026j,
+      title={A finite element formulation for incompressible viscous flow based on the principle of minimum pressure gradient},
+      author={Rimoli, J. J.},
+      journal={Computer Methods in Applied Mechanics and Engineering},
+      volume = {461},
+      pages = {119170},
+      year = {2026},
+      doi = {10.1016/j.cma.2026.119170},
+      url = {https://arxiv.org/abs/2603.02807}
+    }
+- title: "Variational mesh smoothing via pseudo-strain energy minimization"
+  authors: "K. Garanger, A. Mota, J. W. Foulk III, and J. J. Rimoli"
+  authors_html: "K. Garanger, A. Mota, J. W. Foulk III, and <strong>J. J. Rimoli</strong>"
+  year: 2026
+  status: "published"
+  type: "journal"
+  venue: "Computer Methods in Applied Mechanics and Engineering"
+  volume: "458"
+  pages: "119033"
+  doi: "10.1016/j.cma.2026.119033"
+  key: "garanger2026j"
+  bibtex: |
+    @article{garanger2026j,
+      title={Variational mesh smoothing via pseudo-strain energy minimization},
+      author={Garanger, K. and Mota, A. and Foulk III, J. W. and Rimoli, J. J.},
+      journal={Computer Methods in Applied Mechanics and Engineering},
+      volume = {458},
+      pages = {119033},
+      year = {2026},
+      doi = {10.1016/j.cma.2026.119033}
+    }
+- title: "Asymmetric tension–compression connectivity governs deformation delocalization in truss-based metamaterials"
+  authors: "F. N. Ruffini and J. J. Rimoli"
+  authors_html: "F. N. Ruffini and <strong>J. J. Rimoli</strong>"
+  year: 2026
+  status: "published"
+  type: "journal"
+  venue: "npj Metamaterials"
+  volume: "2"
+  number: "1"
+  pages: "10"
+  doi: "10.1038/s44455-026-00020-1"
+  key: "ruffini2026j"
+  bibtex: |
+    @article{ruffini2026j,
+      title={Asymmetric tension--compression connectivity governs deformation delocalization in truss-based metamaterials},
+      author={Ruffini, F. N. and Rimoli, J. J.},
+      journal={npj Metamaterials},
+      volume={2},
+      number={1},
+      pages={10},
+      year={2026},
+      publisher={Nature Publishing Group UK London},
+      doi={10.1038/s44455-026-00020-1}
+    }
+- title: "Divergent evolution of slip banding in CrCoNi alloys"
+  authors: "B. Xie, H. Chen, P. Wang, C. Zhang, B. Xing, M. Xu, X. Wang, L. Valdevit, J. J. Rimoli, X. Pan, and P. Cao"
+  authors_html: "B. Xie, H. Chen, P. Wang, C. Zhang, B. Xing, M. Xu, X. Wang, L. Valdevit, <strong>J. J. Rimoli</strong>, X. Pan, and P. Cao"
+  year: 2025
+  status: "published"
+  type: "journal"
+  venue: "Nature Communications"
+  volume: "16"
+  number: "1"
+  pages: "3631"
+  doi: "10.1038/s41467-025-58480-4"
+  key: "xie2025j"
+  bibtex: |
+    @article{xie2025j,
+      title={Divergent evolution of slip banding in CrCoNi alloys},
+      author={Xie, B. and Chen, H. and Wang, P. and Zhang, C. and Xing, B. and Xu, M. and Wang, X. and Valdevit, L. and Rimoli, J. J. and Pan, X. and Cao, P.},
+      journal={Nature Communications},
+      volume={16},
+      number={1},
+      pages={3631},
+      year={2025},
+      publisher={Nature Publishing Group UK London},
+      doi={10.1038/s41467-025-58480-4}
+    }
+- title: "Decoupling stiffness and peak moment via hierarchical snapping structures designed with machine learning"
+  authors: "K. Hector, P. S. Dasika, J. J. Rimoli, and P. Zavattieri"
+  authors_html: "K. Hector, P. S. Dasika, <strong>J. J. Rimoli</strong>, and P. Zavattieri"
+  year: 2024
+  status: "published"
+  type: "journal"
+  venue: "Materials & Design"
+  volume: "244"
+  pages: "113189"
+  doi: "10.1016/j.matdes.2024.113189"
+  key: "hector2024j"
+  bibtex: |
+    @article{hector2024j,
+      title = {Decoupling stiffness and peak moment via hierarchical snapping structures designed with machine learning},
+      author = {Hector, K. and Dasika, P. S. and Rimoli, J. J. and Zavattieri, P.},
+      journal = {Materials \& Design},
+      volume = {244},
+      pages = {113189},
+      year = {2024},
+      doi = {10.1016/j.matdes.2024.113189}
+    }
+- title: "Symmetry-enforcing neural networks with applications to constitutive modeling"
+  authors: "K. Garanger, J. Kraus, and J. J. Rimoli"
+  authors_html: "K. Garanger, J. Kraus, and <strong>J. J. Rimoli</strong>"
+  year: 2024
+  status: "published"
+  type: "journal"
+  venue: "Extreme Mechanics Letters"
+  volume: "71"
+  pages: "102188"
+  doi: "10.1016/j.eml.2024.102188"
+  url: "https://arxiv.org/abs/2312.13511"
+  url_label: "arXiv"
+  key: "garanger2024j"
+  bibtex: |
+    @article{garanger2024j,
+      title={Symmetry-enforcing neural networks with applications to constitutive modeling},
+      author={Garanger, K. and Kraus, J. and Rimoli, J. J.},
+      journal={Extreme Mechanics Letters},
+      volume = {71},
+      pages = {102188},
+      year = {2024},
+      doi = {10.1016/j.eml.2024.102188},
+      url = {https://arxiv.org/abs/2312.13511}
+    }
+- title: "Propagation of compression solitary waves on tensegrity-like lattices made of truncated octahedrons"
+  authors: "J. de Castro Motta, K. Garanger, and J. J. Rimoli"
+  authors_html: "J. de Castro Motta, K. Garanger, and <strong>J. J. Rimoli</strong>"
+  year: 2024
+  status: "published"
+  type: "journal"
+  venue: "International Journal of Non-Linear Mechanics"
+  volume: "162"
+  pages: "104716"
+  doi: "10.1016/j.ijnonlinmec.2024.104716"
+  key: "mota2024j"
+  bibtex: |
+    @article{mota2024j,
+      title={Propagation of compression solitary waves on tensegrity-like lattices made of truncated octahedrons},
+      author={de Castro Motta, J. and Garanger, K. and Rimoli, J. J.},
+      journal={International Journal of Non-Linear Mechanics},
+      year = {2024},
+      volume= {162},
+      pages = {104716},
+      doi = {10.1016/j.ijnonlinmec.2024.104716}
+    }
+- title: "Integrity ratio: A damage mitigation control metric for component life extension"
+  authors: "A. Shah, C. Mballo, J. V. R. Prasad, and J. J. Rimoli"
+  authors_html: "A. Shah, C. Mballo, J. V. R. Prasad, and <strong>J. J. Rimoli</strong>"
+  year: 2024
+  status: "published"
+  type: "journal"
+  venue: "Journal of the American Helicopter Society"
+  volume: "69"
+  pages: "022006"
+  doi: "10.4050/jahs.69.022006"
+  key: "shah2024j"
+  bibtex: |
+    @article{shah2024j,
+      title={Integrity ratio: A damage mitigation control metric for component life extension},
+      author={Shah, A. and Mballo, C. and Prasad, J. V. R. and Rimoli, J. J.},
+      journal={Journal of the American Helicopter Society},
+      volume = {69},
+      pages = {022006},
+      year = {2024},
+      doi = {10.4050/jahs.69.022006}
+    }
+- title: "A Computational Model for the Thermal Spallation of Crystalline Rocks"
+  authors: "K. A. Hart and J. J. Rimoli"
+  authors_html: "K. A. Hart and <strong>J. J. Rimoli</strong>"
+  year: 2023
+  status: "published"
+  type: "journal"
+  venue: "Rock Mechanics and Rock Engineering"
+  volume: "56"
+  number: "11"
+  pages: "8235-8254"
+  doi: "10.1007/s00603-023-03498-7"
+  key: "hart2023j"
+  bibtex: |
+    @article{hart2023j,
+      title={A Computational Model for the Thermal Spallation of Crystalline Rocks},
+      author={Hart, K. A. and Rimoli, J. J.},
+      journal={Rock Mechanics and Rock Engineering},
+      volume={56},
+      number={11},
+      pages={8235-8254},
+      year = {2023},
+      doi = {10.1007/s00603-023-03498-7}
+    }
+- title: "An elastica theory for compressible imperfect beams with application to mechanical metamaterials"
+  authors: "J. Kraus and J. J. Rimoli"
+  authors_html: "J. Kraus and <strong>J. J. Rimoli</strong>"
+  year: 2023
+  status: "published"
+  type: "journal"
+  venue: "Mechanics Research Communications"
+  volume: "131"
+  pages: "104147"
+  doi: "10.1016/j.mechrescom.2023.104147"
+  key: "kraus2023j"
+  bibtex: |
+    @article{kraus2023j,
+      title = {An elastica theory for compressible imperfect beams with application to mechanical metamaterials},
+      journal = {Mechanics Research Communications},
+      volume = {131},
+      pages = {104147},
+      year = {2023},
+      issn = {0093-6413},
+      doi = {10.1016/j.mechrescom.2023.104147},
+      url = {https://www.sciencedirect.com/science/article/pii/S0093641323001052},
+      author = {Kraus, J. and Rimoli, J.~J.}
+    }
+- title: "Dislocation mechanisms in strengthening and softening of nanotwinned materials"
+  authors: "H. Wang, J. J. Rimoli, and P. Cao"
+  authors_html: "H. Wang, <strong>J. J. Rimoli</strong>, and P. Cao"
+  year: 2023
+  status: "published"
+  type: "journal"
+  venue: "Journal of Applied Physics"
+  volume: "133"
+  number: "5"
+  pages: "055106"
+  doi: "10.1063/5.0138379"
+  key: "Wang2023j"
+  bibtex: |
+    @article{Wang2023j,
+      author = {Wang, H. and Rimoli, J.~J. and Cao, P.},
+      title = {Dislocation mechanisms in strengthening and softening of nanotwinned materials},
+      journal = {Journal of Applied Physics},
+      volume = {133},
+      number = {5},
+      pages = {055106},
+      year = {2023},
+      doi = {10.1063/5.0138379},
+
+      URL = {
+      https://doi.org/10.1063/5.0138379
+
+      },
+      eprint = {
+      https://doi.org/10.1063/5.0138379
+      }
+    }
+- title: "Plasma-wall interaction model for erosion of materials under ion bombardment"
+  authors: "H. Logarzo and J. J. Rimoli"
+  authors_html: "H. Logarzo and <strong>J. J. Rimoli</strong>"
+  year: 2023
+  status: "published"
+  type: "journal"
+  venue: "Journal of Propulsion and Power"
+  volume: "39"
+  number: "3"
+  pages: "438–453"
+  doi: "10.2514/1.b38907"
+  key: "logarzo2023j"
+  bibtex: |
+    @article{logarzo2023j,
+      title={Plasma-wall interaction model for erosion of materials under ion bombardment},
+      author={H. Logarzo and J. J. Rimoli},
+      journal={Journal of Propulsion and Power},
+      volume = {39},
+      number = {3},
+      pages = {438--453},
+      year = {2023},
+      doi = {10.2514/1.b38907}
+    }
+- title: "Data-driven approach for dynamic homogenization using meta learning"
+  authors: "A. Shah and J. J. Rimoli"
+  authors_html: "A. Shah and <strong>J. J. Rimoli</strong>"
+  year: 2022
+  status: "published"
+  type: "journal"
+  venue: "Computer Methods in Applied Mechanics and Engineering"
+  volume: "401"
+  pages: "115672"
+  doi: "10.1016/j.cma.2022.115672"
+  key: "shah2022jb"
+  bibtex: |
+    @article{shah2022jb,
+      title={Data-driven approach for dynamic homogenization using meta learning},
+      author={Shah, A. and Rimoli, J.~J},
+      journal={Computer Methods in Applied Mechanics and Engineering},
+      volume = {401},
+      pages = {115672},
+      year = {2022},
+      doi = {10.1016/j.cma.2022.115672}
+    }
+- title: "Additive Manufacturing of Compliant Mechanisms for Deployable Aerospace Structures"
+  authors: "C. A. Gebara, P. D. Lytal, and J. J. Rimoli"
+  authors_html: "C. A. Gebara, P. D. Lytal, and <strong>J. J. Rimoli</strong>"
+  year: 2022
+  status: "published"
+  type: "journal"
+  venue: "Journal of Materials Engineering and Performance"
+  volume: "31"
+  pages: "6083–6091"
+  doi: "10.1007/s11665-022-07050-6"
+  key: "gebara2022j"
+  bibtex: |
+    @article{gebara2022j,
+      title={Additive Manufacturing of Compliant Mechanisms for Deployable Aerospace Structures},
+      author={Gebara, C.~A. and Lytal, P.~D. and Rimoli, J.~J},
+      journal={Journal of Materials Engineering and Performance},
+      volume={31},
+      pages={6083--6091},
+      year={2022},
+      doi={10.1007/s11665-022-07050-6}
+    }
+- title: "Smart parts: Data-driven model order reduction for nonlinear mechanical assemblies"
+  authors: "A. Shah and J. J. Rimoli"
+  authors_html: "A. Shah and <strong>J. J. Rimoli</strong>"
+  year: 2022
+  status: "published"
+  type: "journal"
+  venue: "Finite Elements in Analysis and Design"
+  volume: "200"
+  pages: "103682"
+  doi: "10.1016/j.finel.2021.103682"
+  award: "Most Downloaded Finite Elements in Analysis and Design Articles"
+  key: "shah2022j"
+  bibtex: |
+    @article{shah2022j,
+      title={Smart parts: Data-driven model order reduction for nonlinear mechanical assemblies},
+      author={Shah, A. and Rimoli, J.~J},
+      journal={Finite Elements in Analysis and Design},
+      volume={200},
+      pages={103682},
+      year={2022},
+      doi={10.1016/j.finel.2021.103682}
+    }
+- title: "Rotorcraft Dynamic Platform Landings Using Robotic Landing Gear"
+  authors: "B. León, J. J. Rimoli, and C. V. Di Leo"
+  authors_html: "B. León, <strong>J. J. Rimoli</strong>, and C. V. Di Leo"
+  year: 2021
+  status: "published"
+  type: "journal"
+  venue: "Journal of Dynamic Systems, Measurement, and Control"
+  volume: "143"
+  number: "11"
+  pages: "111006"
+  doi: "10.1115/1.4051751"
+  key: "leon2021jb"
+  bibtex: |
+    @article{leon2021jb,
+      title={Rotorcraft Dynamic Platform Landings Using Robotic Landing Gear},
+      author={Le{\'o}n, B. and Rimoli, J.~J. and Di Leo, C.~V.},
+      journal={Journal of Dynamic Systems, Measurement, and Control},
+      volume={143},
+      number={11},
+      pages={111006},
+      year={2021},
+      doi={10.1115/1.4051751}
+    }
+- title: "Ground and Flight Tests of an Unmanned Rotorcraft with Cable-Driven Robotic Landing Gear"
+  authors: "B. León, J. J. Rimoli, and C. V. Di Leo"
+  authors_html: "B. León, <strong>J. J. Rimoli</strong>, and C. V. Di Leo"
+  year: 2021
+  status: "published"
+  type: "journal"
+  venue: "Journal of the American Helicopter Society"
+  volume: "66"
+  pages: "032000"
+  doi: "10.4050/jahs.66.042003"
+  key: "leon2021ja"
+  bibtex: |
+    @article{leon2021ja,
+      title={Ground and Flight Tests of an Unmanned Rotorcraft with Cable-Driven Robotic Landing Gear},
+      author={Le{\'o}n, B. and Rimoli, J.~J. and Di Leo, C.~V.},
+      journal={Journal of the American Helicopter Society},
+      volume = {66},
+      pages = {032000},
+      year={2021},
+      doi={10.4050/jahs.66.042003}
+    }
+- title: "Optimization for energy absorption of 3-dimensional tensegrity lattice with truncated octahedral units"
+  authors: "J. Zhang, M. Ohsaki, J. J. Rimoli, and K. Kogiso"
+  authors_html: "J. Zhang, M. Ohsaki, <strong>J. J. Rimoli</strong>, and K. Kogiso"
+  year: 2021
+  status: "published"
+  type: "journal"
+  venue: "Composite Structures"
+  volume: "267"
+  pages: "113903"
+  doi: "10.1016/j.compstruct.2021.113903"
+  key: "zhang2021j"
+  bibtex: |
+    @article{zhang2021j,
+      title={Optimization for energy absorption of 3-dimensional tensegrity lattice with truncated octahedral units},
+      author={ J. Zhang and M. Ohsaki and J. J. Rimoli and K. Kogiso},
+      journal={Composite Structures},
+      volume = {267},
+      pages = {113903},
+      year = {2021},
+      doi = {10.1016/j.compstruct.2021.113903}
+    }
+- title: "Tensegrity Metamaterials: Toward Failure-Resistant Engineering Systems through Delocalized Deformation"
+  authors: "J. Bauer, J. A. Kraus, C. Crook, J. J. Rimoli, and L. Valdevit"
+  authors_html: "J. Bauer, J. A. Kraus, C. Crook, <strong>J. J. Rimoli</strong>, and L. Valdevit"
+  year: 2021
+  status: "published"
+  type: "journal"
+  venue: "Advanced Materials"
+  volume: "33"
+  number: "10"
+  pages: "2005647"
+  doi: "10.1002/adma.202005647"
+  award: "Cover article"
+  key: "bauer2021j"
+  bibtex: |
+    @article{bauer2021j,
+      title = {Tensegrity Metamaterials: Toward Failure-Resistant Engineering Systems through Delocalized Deformation},
+      author = {Bauer, J. and Kraus, J.~A. and Crook, C. and Rimoli, J.~J. and Valdevit, L.},
+      journal = {Advanced Materials},
+      volume = {33},
+      number = {10},
+      year = {2021},
+      pages = {2005647},
+      doi = {10.1002/adma.202005647}
+    }
+- title: "Formation and Impact of Microcracks in Plasma Erosion of M26 Boron Nitride"
+  authors: "N. P. Brown, C. B. Whittaker, J. J. Rimoli, W. J. Ready, and M. L. R. Walker"
+  authors_html: "N. P. Brown, C. B. Whittaker, <strong>J. J. Rimoli</strong>, W. J. Ready, and M. L. R. Walker"
+  year: 2021
+  status: "published"
+  type: "journal"
+  venue: "Journal of Propulsion and Power"
+  volume: "37"
+  pages: "59–67"
+  doi: "10.2514/1.b37948"
+  key: "brown2021j"
+  bibtex: |
+    @article{brown2021j,
+      title={Formation and Impact of Microcracks in Plasma Erosion of M26 Boron Nitride},
+      author={Brown, Nathan P. and Whittaker, C. B. and Rimoli, J. J. and Ready, W. J. and Walker, M. L. R.},
+      journal={Journal of Propulsion and Power},
+      volume={37},
+      issue={1},
+      pages={59--67},
+      year={2021},
+      publisher={American Institute of Aeronautics and Astronautics},
+      doi={10.2514/1.b37948}
+    }
+- title: "Smart Constitutive Laws: Inelastic Homogenization Through Machine Learning"
+  authors: "H. Logarzo, G. Capuano, and J. J. Rimoli"
+  authors_html: "H. Logarzo, G. Capuano, and <strong>J. J. Rimoli</strong>"
+  year: 2021
+  status: "published"
+  type: "journal"
+  venue: "Computer Methods in Applied Mechanics and Engineering"
+  volume: "373"
+  pages: "113482"
+  doi: "10.1016/j.cma.2020.113482"
+  award: "Most Downloaded Computer Methods in Applied Mechanics and Engineering Articles"
+  key: "logarzo2021j"
+  bibtex: |
+    @article{logarzo2021j,
+      title={Smart Constitutive Laws: Inelastic Homogenization Through Machine Learning},
+      author={H. Logarzo and G. Capuano and J. J. Rimoli},
+      journal={Computer Methods in Applied Mechanics and Engineering},
+      volume = {373},
+      pages = {113482},
+      year = {2021},
+      doi = {10.1016/j.cma.2020.113482}
+    }
+- title: "MicroStructPy: A Statistical Microstructure Mesh Generator in Python"
+  authors: "K. A. Hart and J. J. Rimoli"
+  authors_html: "K. A. Hart and <strong>J. J. Rimoli</strong>"
+  year: 2020
+  status: "published"
+  type: "journal"
+  venue: "SoftwareX"
+  volume: "12"
+  pages: "100595"
+  doi: "10.1016/j.softx.2020.100595"
+  key: "hart2020bj"
+  bibtex: |
+    @article{hart2020bj,
+      title={MicroStructPy: A Statistical Microstructure Mesh Generator in Python},
+      author={Hart, K. A. and Rimoli, J. J.},
+      journal={SoftwareX},
+      volume = {12},
+      pages = {100595},
+      year = {2020},
+      doi = {10.1016/j.softx.2020.100595}
+    }
+- title: "Generation of Statistically Representative Microstructures with Direct Grain Geometry Control"
+  authors: "K. A. Hart and J. J. Rimoli"
+  authors_html: "K. A. Hart and <strong>J. J. Rimoli</strong>"
+  year: 2020
+  status: "published"
+  type: "journal"
+  venue: "Computer Methods in Applied Mechanics and Engineering"
+  volume: "370"
+  pages: "113242"
+  doi: "10.1016/j.cma.2020.113242"
+  award: "Most Downloaded Computer Methods in Applied Mechanics and Engineering Articles"
+  key: "hart2020j"
+  bibtex: |
+    @article{hart2020j,
+      title={Generation of Statistically Representative Microstructures with Direct Grain Geometry Control},
+      author={Hart, K. A. and Rimoli, J. J.},
+      journal={Computer Methods in Applied Mechanics and Engineering},
+      volume = {370},
+      pages = {113242},
+      year={2020},
+      doi={10.1016/j.cma.2020.113242}
+    }
+- title: "Prestress-controlled asymmetric wave propagation and reciprocity-breaking in tensegrity metastructure"
+  authors: "Y. Wang, W. Zhao, J. J. Rimoli, R. Zhu, and G. Hu"
+  authors_html: "Y. Wang, W. Zhao, <strong>J. J. Rimoli</strong>, R. Zhu, and G. Hu"
+  year: 2020
+  status: "published"
+  type: "journal"
+  venue: "Extreme Mechanics Letters"
+  volume: "37"
+  pages: "100724"
+  doi: "10.1016/j.eml.2020.100724"
+  key: "wang2020j"
+  bibtex: |
+    @article{wang2020j,
+      title = {Prestress-controlled asymmetric wave propagation and reciprocity-breaking in tensegrity metastructure},
+      author = {Y. Wang and W. Zhao and J. J. Rimoli and R. Zhu and G. Hu},
+      journal = {Extreme Mechanics Letters},
+      volume = {37},
+      pages = {100724},
+      year = {2020},
+      doi = {10.1016/j.eml.2020.100724}
+    }
+- title: "Design of a Crashworthy Cable-Driven Four-Bar Link Robotic Landing Gear System"
+  authors: "C. V. Di Leo, B. León, J. Wachlin, M. Kurien, A. Krishnan, A. Krishnan, J. J. Rimoli, and M. Costello"
+  authors_html: "C. V. Di Leo, B. León, J. Wachlin, M. Kurien, A. Krishnan, A. Krishnan, <strong>J. J. Rimoli</strong>, and M. Costello"
+  year: 2020
+  status: "published"
+  type: "journal"
+  venue: "Journal of Aircraft"
+  volume: "57"
+  number: "2"
+  pages: "224–244"
+  doi: "10.2514/1.c035386"
+  key: "leon2020j"
+  bibtex: |
+    @article{leon2020j,
+      title={Design of a Crashworthy Cable-Driven Four-Bar Link Robotic Landing Gear System},
+      author={Di Leo, C.~V. and Le{\'o}n, B. and Wachlin, J. and Kurien, M. and Krishnan, A. and Krishnan, A. and Rimoli, J.~J. and Costello, M.},
+      journal={Journal of Aircraft},
+      volume={57},
+      number={2},
+      pages={224--244},
+      year={2020},
+      publisher={American Institute of Aeronautics and Astronautics},
+      doi={10.2514/1.c035386}
+    }
+- title: "Multiscale lattices and composite materials: Optimal design, modeling and characterization"
+  authors: "F. Fraternali, C. Daraio, and J. J. Rimoli"
+  authors_html: "F. Fraternali, C. Daraio, and <strong>J. J. Rimoli</strong>"
+  year: 2019
+  status: "published"
+  type: "journal"
+  venue: "Frontiers in Materials"
+  volume: "6"
+  pages: "199"
+  doi: "10.3389/fmats.2019.00199"
+  key: "fraternali2019j"
+  bibtex: |
+    @article{fraternali2019j,
+      title={Multiscale lattices and composite materials: Optimal design, modeling and characterization},
+      author={Fraternali, F. and Daraio, C. and Rimoli, J.~J.},
+      journal={Frontiers in Materials},
+      volume={6},
+      pages={199},
+      year={2019},
+      publisher={Frontiers Media SA},
+      doi={10.3389/fmats.2019.00199}
+    }
+- title: "Elastomer Encapsulated Pressure Sensor with Engineered Air Cavity for Force Sensing"
+  authors: "B. Leon, J. J. Rimoli, and C. V. Di Leo"
+  authors_html: "B. Leon, <strong>J. J. Rimoli</strong>, and C. V. Di Leo"
+  year: 2019
+  status: "published"
+  type: "journal"
+  venue: "IEEE Sensors Journal"
+  volume: "19"
+  pages: "6628–6643"
+  doi: "10.1109/jsen.2019.2912515"
+  key: "leon2019j"
+  bibtex: |
+    @article{leon2019j,
+      author = {B.~Leon and J.~J.~Rimoli and C.~V.~Di Leo},
+      title = {Elastomer Encapsulated Pressure Sensor with Engineered Air Cavity for Force Sensing},
+      journal = {IEEE Sensors Journal},
+      volume = {19},
+      issue = {16},
+      pages = {6628--6643},
+      year = {2019},
+      doi = {10.1109/jsen.2019.2912515}
+    }
+- title: "Design and Impact Response of 3D-Printable Tensegrity-Inspired Structures"
+  authors: "K. Pajunen, P. Johanns, R. K. Pal, J. J. Rimoli, and C. Daraio"
+  authors_html: "K. Pajunen, P. Johanns, R. K. Pal, <strong>J. J. Rimoli</strong>, and C. Daraio"
+  year: 2019
+  status: "published"
+  type: "journal"
+  venue: "Materials & Design"
+  volume: "182"
+  pages: "107966"
+  doi: "10.1016/j.matdes.2019.107966"
+  key: "pajunen2019j"
+  bibtex: |
+    @article{pajunen2019j,
+      author = {K.~Pajunen and P.~Johanns and R.~K.~Pal and J.~J.~Rimoli and C.~Daraio},
+      title = {Design and Impact Response of 3D-Printable Tensegrity-Inspired Structures},
+      journal = {Materials \& Design},
+      volume = {182},
+      pages = {107966},
+      year = {2019},
+      doi = {10.1016/j.matdes.2019.107966}
+    }
+- title: "New perspectives on the grain-size dependent yield strength of polycrystalline metals"
+  authors: "C. V. Di Leo and J. J. Rimoli"
+  authors_html: "C. V. Di Leo and <strong>J. J. Rimoli</strong>"
+  year: 2019
+  status: "published"
+  type: "journal"
+  venue: "Scripta Materialia"
+  volume: "166"
+  pages: "149–153"
+  doi: "10.1016/j.scriptamat.2019.03.019"
+  key: "dileo2019j"
+  bibtex: |
+    @article{dileo2019j,
+      author = {C.~V.~Di Leo and J.~J.~Rimoli},
+      title = {New perspectives on the grain-size dependent yield strength of polycrystalline metals},
+      journal = {Scripta Materialia},
+      volume = {166},
+      pages = {149--153},
+      year = {2019},
+      doi = {10.1016/j.scriptamat.2019.03.019}
+    }
+- title: "Smart finite elements: a novel machine learning application"
+  authors: "G. Capuano and J. J. Rimoli"
+  authors_html: "G. Capuano and <strong>J. J. Rimoli</strong>"
+  year: 2019
+  status: "published"
+  type: "journal"
+  venue: "Computer Methods in Applied Mechanics and Engineering"
+  volume: "345"
+  pages: "363–381"
+  doi: "10.1016/j.cma.2018.10.046"
+  award: "Most Downloaded Computer Methods in Applied Mechanics and Engineering Articles"
+  key: "capuano2019j"
+  bibtex: |
+    @article{capuano2019j,
+      author = {G.~Capuano and J.~J.~Rimoli},
+      title = {Smart finite elements: a novel machine learning application},
+      journal = {Computer Methods in Applied Mechanics and Engineering},
+      volume = {345},
+      pages = {363--381},
+      year = {2019},
+      doi = {10.1016/j.cma.2018.10.046}
+    }
+- title: "Material symmetry phase transitions in three-dimensional tensegrity metamaterials"
+  authors: "H. Salahshoor, R. K. Pal, and J. J. Rimoli"
+  authors_html: "H. Salahshoor, R. K. Pal, and <strong>J. J. Rimoli</strong>"
+  year: 2018
+  status: "published"
+  type: "journal"
+  venue: "Journal of the Mechanics and Physics of Solids"
+  volume: "119"
+  pages: "382–399"
+  doi: "10.1016/j.jmps.2018.07.011"
+  key: "salahshoor2018jb"
+  bibtex: |
+    @article{salahshoor2018jb,
+      author = {H.~Salahshoor and R.~K.~Pal and J.~J.~Rimoli},
+      title = {Material symmetry phase transitions in three-dimensional tensegrity metamaterials},
+      journal = {Journal of the Mechanics and Physics of Solids},
+      volume = {119},
+      pages = {382--399},
+      year = {2018},
+      doi = {10.1016/j.jmps.2018.07.011}
+    }
+- title: "Tunable wave propagation by varying prestrain in tensegrity-based periodic media"
+  authors: "R. K. Pal, M. Ruzzene, and J. J. Rimoli"
+  authors_html: "R. K. Pal, M. Ruzzene, and <strong>J. J. Rimoli</strong>"
+  year: 2018
+  status: "published"
+  type: "journal"
+  venue: "Extreme Mechanics Letters"
+  volume: "22"
+  pages: "149–156"
+  doi: "10.1016/j.eml.2018.06.005"
+  url: "https://arxiv.org/abs/1805.01943"
+  url_label: "arXiv"
+  key: "pal2018j"
+  bibtex: |
+    @article{pal2018j,
+      author = {R.~K.~Pal and M.~Ruzzene and J.~J.~Rimoli},
+      title = {Tunable wave propagation by varying prestrain in tensegrity-based periodic media},
+      journal = {Extreme Mechanics Letters},
+      volume = {22},
+      pages = {149--156},
+      year = {2018},
+      doi = {10.1016/j.eml.2018.06.005},
+      url = {https://arxiv.org/abs/1805.01943}
+    }
+- title: "Modal-Based Finite Elements for Efficient Wave Propagation Analysis"
+  authors: "G. Capuano, M. Ruzzene, and J. J. Rimoli"
+  authors_html: "G. Capuano, M. Ruzzene, and <strong>J. J. Rimoli</strong>"
+  year: 2018
+  status: "published"
+  type: "journal"
+  venue: "Finite Elements in Analysis and Design"
+  volume: "145"
+  pages: "10–19"
+  doi: "10.1016/j.finel.2018.03.004"
+  key: "capuano2018j"
+  bibtex: |
+    @article{capuano2018j,
+    author = {G.~Capuano and M.~Ruzzene and J.~J.~Rimoli},
+    title = {Modal-Based Finite Elements for Efficient Wave Propagation Analysis},
+    journal = {Finite Elements in Analysis and Design},
+    volume = {145},
+    pages = {10--19},
+    year = {2018},
+    doi = {10.1016/j.finel.2018.03.004}
+    }
+- title: "Non-Schmid effects and finite wavelength instabilities in single crystal metals"
+  authors: "H. Salahshoor, R. K. Pal, and J. J. Rimoli"
+  authors_html: "H. Salahshoor, R. K. Pal, and <strong>J. J. Rimoli</strong>"
+  year: 2018
+  status: "published"
+  type: "journal"
+  venue: "Extreme Mechanics Letters"
+  volume: "20"
+  pages: "9–13"
+  doi: "10.1016/j.eml.2017.12.010"
+  key: "salahshoor2018j"
+  bibtex: |
+    @article{salahshoor2018j,
+      author = {H.~Salahshoor and R.~K.~Pal and J.~J.~Rimoli},
+      title = {Non-Schmid effects and finite wavelength instabilities in single crystal metals},
+      journal = {Extreme Mechanics Letters},
+      volume = {20},
+      pages = {9--13},
+      year = {2018},
+      doi = {10.1016/j.eml.2017.12.010}
+    }
+- title: "Optical evaluation of the wave filtering properties of graded undulated lattices"
+  authors: "G. Trainiti, J. J. Rimoli, and M. Ruzzene"
+  authors_html: "G. Trainiti, <strong>J. J. Rimoli</strong>, and M. Ruzzene"
+  year: 2018
+  status: "published"
+  type: "journal"
+  venue: "Journal of Applied Physics"
+  volume: "123"
+  number: "9"
+  pages: "091706"
+  doi: "10.1063/1.5011369"
+  key: "trainiti2018j"
+  bibtex: |
+    @article{trainiti2018j,
+    author = {G.~Trainiti and J.~J.~Rimoli and M.~Ruzzene},
+    title = {Optical evaluation of the wave filtering properties of graded undulated lattices},
+    journal = {Journal of Applied Physics},
+    volume = {123},
+    number = {9},
+    pages = {091706},
+    year = {2018},
+    doi = {10.1063/1.5011369}
+    }
+- title: "A reduced-order model for the dynamic and post-buckling behavior of tensegrity structures"
+  authors: "J. J. Rimoli"
+  authors_html: "<strong>J. J. Rimoli</strong>"
+  year: 2018
+  status: "published"
+  type: "journal"
+  venue: "Mechanics of Materials"
+  volume: "116"
+  pages: "146–57"
+  doi: "10.1016/j.mechmat.2017.01.009"
+  key: "rimoli2018j"
+  bibtex: |
+    @article{rimoli2018j,
+      author = {J.~J.~Rimoli},
+      title = {A reduced-order model for the dynamic and post-buckling behavior of tensegrity structures},
+      journal = {Mechanics of Materials},
+      year = {2018},
+      volume={116},
+      pages={146--57},
+      doi={10.1016/j.mechmat.2017.01.009}
+    }
+- title: "Mechanical response of 3-dimensional tensegrity lattices"
+  authors: "J. J. Rimoli and R. K. Pal"
+  authors_html: "<strong>J. J. Rimoli</strong> and R. K. Pal"
+  year: 2017
+  status: "published"
+  type: "journal"
+  venue: "Composites Part B: Engineering"
+  volume: "115"
+  pages: "30–42"
+  doi: "10.1016/j.compositesb.2016.10.046"
+  key: "rimoli2017ja"
+  bibtex: |
+    @article{rimoli2017ja,
+      author = {J.~J.~Rimoli and R.~K.~Pal},
+      title = {Mechanical response of 3-dimensional tensegrity lattices},
+      journal = {Composites Part B: Engineering},
+      year = "2017",
+      volume={115},
+      pages={30--42},
+      doi={10.1016/j.compositesb.2016.10.046}
+    }
+- title: "Investigation of Plasma Material Erosion under Mechanical Stress"
+  authors: "A. M. Schinder, J. J. Rimoli, and M. L. R. Walker"
+  authors_html: "A. M. Schinder, <strong>J. J. Rimoli</strong>, and M. L. R. Walker"
+  year: 2017
+  status: "published"
+  type: "journal"
+  venue: "Journal of Propulsion and Power"
+  volume: "33"
+  number: "2"
+  pages: "433–447"
+  doi: "10.2514/1.b36253"
+  key: "Schinder2017j"
+  bibtex: |
+    @article{Schinder2017j,
+      author = {A.~M.~Schinder and J.~J.~Rimoli and M.~L.~R.~Walker},
+      title = {Investigation of Plasma Material Erosion under Mechanical Stress},
+      journal = {Journal of Propulsion and Power},
+      volume={33},
+      number={2},
+      pages={433--447},
+      year={2017},
+      doi={10.2514/1.b36253}
+    }
+- title: "Wave Propagation in Undulated Structural Lattices"
+  authors: "G. Trainiti, J. J. Rimoli, and M. Ruzzene"
+  authors_html: "G. Trainiti, <strong>J. J. Rimoli</strong>, and M. Ruzzene"
+  year: 2016
+  status: "published"
+  type: "journal"
+  venue: "International Journal of Solids and Structures"
+  volume: "97-98"
+  pages: "431–444"
+  doi: "10.1016/j.ijsolstr.2016.07.006"
+  url: "https://arxiv.org/abs/1512.00114"
+  url_label: "arXiv"
+  key: "trainiti2016j"
+  bibtex: |
+    @article{trainiti2016j,
+    author = {G. Trainiti and J. J. Rimoli and M. Ruzzene},
+    title = {Wave Propagation in Undulated Structural Lattices},
+    journal = {International Journal of Solids and Structures},
+    volume={97-98},
+    number="",
+    pages={431--444},
+    year={2016},
+    doi={10.1016/j.ijsolstr.2016.07.006},
+    url={https://arxiv.org/abs/1512.00114}
+    }
+- title: "A continuum model for nonlinear lattices under large deformations"
+  authors: "R. K. Pal, M. Ruzzene, and J. J. Rimoli"
+  authors_html: "R. K. Pal, M. Ruzzene, and <strong>J. J. Rimoli</strong>"
+  year: 2016
+  status: "published"
+  type: "journal"
+  venue: "International Journal of Solids and Structures"
+  volume: "96"
+  pages: "300–319"
+  doi: "10.1016/j.ijsolstr.2016.05.020"
+  key: "pal2016jb"
+  bibtex: |
+    @article{pal2016jb,
+      author = {R. K. Pal and M. Ruzzene and J. J. Rimoli},
+      title = {A continuum model for nonlinear lattices under large deformations},
+      journal = {International Journal of Solids and Structures},
+      volume={96},
+      number="",
+      pages={300--319},
+      year={2016},
+      doi={10.1016/j.ijsolstr.2016.05.020}
+    }
+- title: "Exploiting Length-Dependent Effects for the Design of Single-Material Systems with Enhanced Thermal Transport Properties"
+  authors: "J. B. Bouquet, F. Burgaud, and J. J. Rimoli"
+  authors_html: "J. B. Bouquet, F. Burgaud, and <strong>J. J. Rimoli</strong>"
+  year: 2016
+  status: "published"
+  type: "journal"
+  venue: "International Journal of Heat and Mass Transfer"
+  volume: "101"
+  pages: "1227–1236"
+  doi: "10.1016/j.ijheatmasstransfer.2016.05.122"
+  key: "bouquet2016j"
+  bibtex: |
+    @article{bouquet2016j,
+    author = {J. B. Bouquet and F. Burgaud and J. J. Rimoli},
+    title = {Exploiting Length-Dependent Effects for the Design of Single-Material Systems with Enhanced Thermal Transport Properties},
+    journal = {International Journal of Heat and Mass Transfer},
+    volume ={101},
+    year = {2016},
+    pages={1227--1236},
+    doi={10.1016/j.ijheatmasstransfer.2016.05.122}
+    }
+- title: "Effect of large deformation pre-loads on the wave properties of hexagonal lattices"
+  authors: "R. K. Pal, J. J. Rimoli, and M. Ruzzene"
+  authors_html: "R. K. Pal, <strong>J. J. Rimoli</strong>, and M. Ruzzene"
+  year: 2016
+  status: "published"
+  type: "journal"
+  venue: "Smart Materials and Structures"
+  volume: "25"
+  number: "5"
+  pages: "054010"
+  doi: "10.1088/0964-1726/25/5/054010"
+  key: "pal2016ja"
+  bibtex: |
+    @article{pal2016ja,
+    author = {R.~K.~Pal and J.~J.~Rimoli and M.~Ruzzene},
+    title = {Effect of large deformation pre-loads on the wave properties of hexagonal lattices},
+    journal = {Smart Materials and Structures},
+    volume={25},
+      number={5},
+      pages={054010},
+      year={2016},
+      publisher={IOP Publishing},
+      doi={10.1088/0964-1726/25/5/054010}
+    }
+- title: "Multiscale finite element analysis of wave propagation in periodic solids"
+  authors: "F. Casadei, J. J. Rimoli, and M. Ruzzene"
+  authors_html: "F. Casadei, <strong>J. J. Rimoli</strong>, and M. Ruzzene"
+  year: 2016
+  status: "published"
+  type: "journal"
+  venue: "Finite Elements in Analysis and Design"
+  volume: "108"
+  pages: "81–95"
+  doi: "10.1016/j.finel.2015.10.002"
+  key: "casadei2016j"
+  bibtex: |
+    @article{casadei2016j,
+    author = {F.~Casadei and J.~J.~Rimoli and M.~Ruzzene},
+    title = {Multiscale finite element analysis of wave propagation in periodic solids},
+    journal = {Finite Elements in Analysis and Design},
+    year = "2016",
+    volume={108},
+    pages={81--95},
+    doi={10.1016/j.finel.2015.10.002}
+    }
+- title: "Out-of-Plane Elastic Waves in 2D Models of Solids: A Case Study for a Nonlocal Discretization Scheme with Reduced Numerical Dispersion"
+  authors: "A. Martowicz, M. Ruzzene, W. J. Staszewski, J. J. Rimoli, and T. Uhl"
+  authors_html: "A. Martowicz, M. Ruzzene, W. J. Staszewski, <strong>J. J. Rimoli</strong>, and T. Uhl"
+  year: 2015
+  status: "published"
+  type: "journal"
+  venue: "Mathematical Problems in Engineering"
+  volume: "2015"
+  doi: "10.1155/2015/584081"
+  key: "martowicz2015j"
+  bibtex: |
+    @article{martowicz2015j,
+      title={Out-of-Plane Elastic Waves in 2{D} Models of Solids: A Case Study for a Nonlocal Discretization Scheme with Reduced Numerical Dispersion},
+      author={A.~Martowicz and M.~Ruzzene and W.~J.~Staszewski and J.~J.~Rimoli and T.~Uhl},
+      journal={Mathematical Problems in Engineering},
+      volume={2015},
+      year={2015},
+      publisher={Hindawi Publishing Corporation},
+      doi={10.1155/2015/584081}
+    }
+- title: "Wave Propagation in Periodically Undulated Beams and Plates"
+  authors: "G. Trainiti, J. J. Rimoli, and M. Ruzzene"
+  authors_html: "G. Trainiti, <strong>J. J. Rimoli</strong>, and M. Ruzzene"
+  year: 2015
+  status: "published"
+  type: "journal"
+  venue: "International Journal of Solids and Structures"
+  volume: "75"
+  pages: "260–276"
+  doi: "10.1016/j.ijsolstr.2015.08.019"
+  key: "trainiti2015j"
+  bibtex: |
+    @article{trainiti2015j,
+    author = {G.~Trainiti and J.~J.~Rimoli and M.~Ruzzene},
+    title = {Wave Propagation in Periodically Undulated Beams and Plates},
+    journal = {International Journal of Solids and Structures},
+    volume = {75},
+    number = "",
+    pages = {260--276},
+    year = {2015},
+    doi = {10.1016/j.ijsolstr.2015.08.019}
+    }
+- title: "A length-dependent model for the thermomechanical response of ceramics"
+  authors: "J. B. Bouquet and J. J. Rimoli"
+  authors_html: "J. B. Bouquet and <strong>J. J. Rimoli</strong>"
+  year: 2015
+  status: "published"
+  type: "journal"
+  venue: "Journal of the Mechanics and Physics of Solids"
+  volume: "82"
+  pages: "82–96"
+  doi: "10.1016/j.jmps.2015.05.018"
+  abstract: "Abstract We present a length-dependent model for the thermomechanical response of ceramics through a concurrent multiscale scheme that accounts for: (i) the locally varying values of the sub-grain thermal conductivity tensor due to the interaction of phonons with microstructural features such as grain boundaries, and (ii) a continuum model of thermal stresses that explicitly resolves the polycrystalline structure of the material. At the sub-grain level, we compute the values of the thermal conductivity tensor using the Boltzmann transport equation under the relaxation time approximation. At the continuum level, the polycrystalline structure of the specimen is resolved explicitly by a finite element mesh and the texture of the polycrystal is assumed to be given. At this level, we adopt a Fourier model of heat conduction which utilizes values of thermal conductivity obtained at the lower scale. The mechanical response of the grains is modeled as elastic and anisotropic. The capabilities of the model are demonstrated through a series of examples, which highlight the potential of our approach for designing materials with improved thermomechanical response."
+  key: "Bouquet2015j"
+  bibtex: |
+    @article{Bouquet2015j,
+    title = "A length-dependent model for the thermomechanical response of ceramics ",
+    journal = "Journal of the Mechanics and Physics of Solids",
+    volume = "82",
+    number = "",
+    pages = "82--96",
+    year = "2015",
+    note = "",
+    author = {J.~B.~Bouquet and J.~J.~Rimoli},
+    keywords = "Thermal conductivity",
+    keywords = "Thermal stresses",
+    keywords = "Length-dependent effects",
+    keywords = "Multiscale model",
+    keywords = "Concurrent multiscale ",
+    abstract = "Abstract We present a length-dependent model for the thermomechanical response of ceramics through a concurrent multiscale scheme that accounts for: (i) the locally varying values of the sub-grain thermal conductivity tensor due to the interaction of phonons with microstructural features such as grain boundaries, and (ii) a continuum model of thermal stresses that explicitly resolves the polycrystalline structure of the material. At the sub-grain level, we compute the values of the thermal conductivity tensor using the Boltzmann transport equation under the relaxation time approximation. At the continuum level, the polycrystalline structure of the specimen is resolved explicitly by a finite element mesh and the texture of the polycrystal is assumed to be given. At this level, we adopt a Fourier model of heat conduction which utilizes values of thermal conductivity obtained at the lower scale. The mechanical response of the grains is modeled as elastic and anisotropic. The capabilities of the model are demonstrated through a series of examples, which highlight the potential of our approach for designing materials with improved thermomechanical response. ",
+    doi = {10.1016/j.jmps.2015.05.018}
+    }
+- title: "Meshing strategies for the alleviation of mesh-induced effects in cohesive element models"
+  authors: "J. J. Rimoli and J. J. Rojas"
+  authors_html: "<strong>J. J. Rimoli</strong> and J. J. Rojas"
+  year: 2015
+  status: "published"
+  type: "journal"
+  venue: "International Journal of Fracture"
+  volume: "193"
+  number: "1"
+  pages: "29-42"
+  doi: "10.1007/s10704-015-0013-6"
+  url: "https://arxiv.org/abs/1302.1161"
+  url_label: "arXiv"
+  key: "rimoli2015j"
+  bibtex: |
+    @article{rimoli2015j,
+    year={2015},
+    journal={International Journal of Fracture},
+    volume={193},
+    number={1},
+    title={Meshing strategies for the alleviation of mesh-induced effects in cohesive element models},
+    publisher={Springer Netherlands},
+    keywords={Cohesive elements; Localization elements; Mesh dependence; Mesh refinement; Convergence},
+    author={J.~J.~Rimoli and J.~J.~Rojas},
+    pages={29-42},
+    language={English},
+    doi={10.1007/s10704-015-0013-6},
+    url={https://arxiv.org/abs/1302.1161}
+    }
+- title: "Analysis of thermomechanical response of polycrystalline HMX under impact loading through mesoscale simulations"
+  authors: "D. B. Hardin, J. J. Rimoli, and M. Zhou"
+  authors_html: "D. B. Hardin, <strong>J. J. Rimoli</strong>, and M. Zhou"
+  year: 2014
+  status: "published"
+  type: "journal"
+  venue: "AIP Advances"
+  volume: "4"
+  number: "9"
+  pages: "097136"
+  doi: "10.1063/1.4896699"
+  key: "hardin2014j"
+  bibtex: |
+    @article{hardin2014j,
+    author = {D.~B.~Hardin and J.~J.~Rimoli and M.~Zhou},
+    title = {Analysis of thermomechanical response of polycrystalline {HMX} under impact loading through mesoscale simulations},
+    journal = {AIP Advances},
+    year = "2014",
+    volume = "4",
+    number = "9",
+    pages = "097136",
+    doi = {10.1063/1.4896699}
+    }
+- title: "Three-Dimensional model for erosion of a Hall Effect thruster discharge channel wall"
+  authors: "A. M. Schinder, M. L. .. R. Walker, and J. J. Rimoli"
+  authors_html: "A. M. Schinder, M. L. .. R. Walker, and <strong>J. J. Rimoli</strong>"
+  year: 2014
+  status: "published"
+  type: "journal"
+  venue: "Journal of Propulsion and Power"
+  volume: "30"
+  number: "5"
+  pages: "1373–1382"
+  doi: "10.2514/1.b35098"
+  key: "schinder2014j"
+  bibtex: |
+    @article{schinder2014j,
+    title = "Three-Dimensional model for erosion of a {H}all Effect thruster discharge channel wall",
+    author = {A.~M.~Schinder and M.~L.~.R.~Walker and J.~J.~Rimoli},
+    journal = "Journal of Propulsion and Power",
+    year = "2014",
+    volume = "30",
+    number = "5",
+    pages = "1373--1382",
+    doi = {10.2514/1.b35098}
+    }
+- title: "Multiscale finite element analysis of elastic wave scattering from localized defects"
+  authors: "F. Casadei, J. J. Rimoli, and M. Ruzzene"
+  authors_html: "F. Casadei, <strong>J. J. Rimoli</strong>, and M. Ruzzene"
+  year: 2014
+  status: "published"
+  type: "journal"
+  venue: "Finite Elements in Analysis and Design"
+  volume: "88"
+  pages: "1–15"
+  doi: "10.1016/j.finel.2014.05.009"
+  key: "casadei2014ja"
+  bibtex: |
+    @article{casadei2014ja,
+    author = {F.~Casadei and J.~J.~Rimoli and M.~Ruzzene},
+    title = {Multiscale finite element analysis of elastic wave scattering from localized  defects},
+    journal = {Finite Elements in Analysis and Design},
+    year = "2014",
+    volume={88},
+    pages={1--15},
+    doi={10.1016/j.finel.2014.05.009}
+    }
+- title: "Plasma Induced Erosion on Ceramic Wall Structures in Hall Effect Thrusters"
+  authors: "T. Burton, A. M. Schinder, G. Capuano, J. J. Rimoli, M. L. R. Walker, and G. B. Thompson"
+  authors_html: "T. Burton, A. M. Schinder, G. Capuano, <strong>J. J. Rimoli</strong>, M. L. R. Walker, and G. B. Thompson"
+  year: 2014
+  status: "published"
+  type: "journal"
+  venue: "Journal of Propulsion and Power"
+  volume: "30"
+  number: "3"
+  pages: "690–695"
+  doi: "10.2514/1.b34882"
+  key: "thompson2014j"
+  bibtex: |
+    @article{thompson2014j,
+    title = "Plasma Induced Erosion on Ceramic Wall Structures in {H}all Effect Thrusters",
+    author = {T.~Burton and A.~M.~Schinder and G.~Capuano and J.~J.~Rimoli and M.~L.~R.~Walker and G.~B.~Thompson},
+    journal = "Journal of Propulsion and Power",
+    volume = "30",
+    number = "3",
+    pages = "690--695",
+    year = "2014",
+    doi = {10.2514/1.b34882}
+    }
+- title: "An approach for incorporating classical continuum damage models in state-based peridynamics"
+  authors: "M. R. Tupek, J. J. Rimoli, and R. Radovitzky"
+  authors_html: "M. R. Tupek, <strong>J. J. Rimoli</strong>, and R. Radovitzky"
+  year: 2013
+  status: "published"
+  type: "journal"
+  venue: "Computer Methods in Applied Mechanics and Engineering"
+  volume: "263"
+  pages: "20–26"
+  doi: "10.1016/j.cma.2013.04.012"
+  key: "tupek2013j"
+  bibtex: |
+    @article{tupek2013j,
+    author = {M.~R.~Tupek and J.~J.~Rimoli and R.~Radovitzky},
+    title = {An approach for incorporating classical continuum damage models in state-based peridynamics},
+    journal = {Computer Methods in Applied Mechanics and Engineering},
+    volume = "263",
+    pages = "20--26",
+    year = {2013},
+    doi = {10.1016/j.cma.2013.04.012}
+    }
+- title: "A geometric multiscale finite element method for the dynamic analysis of heterogeneous solids"
+  authors: "F. Casadei, J. J. Rimoli, and M. Ruzzene"
+  authors_html: "F. Casadei, <strong>J. J. Rimoli</strong>, and M. Ruzzene"
+  year: 2013
+  status: "published"
+  type: "journal"
+  venue: "Computer Methods in Applied Mechanics and Engineering"
+  volume: "263"
+  pages: "56–70"
+  doi: "10.1016/j.cma.2013.05.009"
+  key: "casadei2013jb"
+  bibtex: |
+    @article{casadei2013jb,
+    author = {F.~Casadei and J.~J.~Rimoli and M.~Ruzzene},
+    title = {A geometric multiscale finite element method for the dynamic analysis of heterogeneous solids},
+    journal = {Computer Methods in Applied Mechanics and Engineering},
+    volume = "263",
+    pages = "56--70",
+    year = {2013},
+    doi = {10.1016/j.cma.2013.05.009}
+    }
+- title: "Anisotropy-induced broadband stress wave steering in periodic lattices"
+  authors: "F. Casadei and J. J. Rimoli"
+  authors_html: "F. Casadei and <strong>J. J. Rimoli</strong>"
+  year: 2013
+  status: "published"
+  type: "journal"
+  venue: "International Journal of Solids and Structures"
+  volume: "50"
+  number: "9"
+  pages: "1402–1414"
+  doi: "10.1016/j.ijsolstr.2013.01.015"
+  key: "Casadei2013ja"
+  bibtex: |
+    @article{Casadei2013ja,
+    title = "Anisotropy-induced broadband stress wave steering in periodic lattices",
+    journal = "International Journal of Solids and Structures",
+    volume = "50",
+    number = "9",
+    pages = "1402--1414",
+    year = "2013",
+    note = "",
+    author = "F.~Casadei and J.~J.~Rimoli",
+    keywords = "Wave directionality",
+    keywords = "Structural lattices",
+    keywords = "Effective anisotropy",
+    keywords = "Unit cell analysis",
+    keywords = "Transient response",
+    doi = {10.1016/j.ijsolstr.2013.01.015}
+    }
+- title: "Wet-sand impulse loading of metallic plates and corrugated core sandwich panels"
+  authors: "J. J. Rimoli, B. Talamini, J. J. Wetzel, K. P. Dharmasena, R. Radovitzky, and H. N. G. Wadley"
+  authors_html: "<strong>J. J. Rimoli</strong>, B. Talamini, J. J. Wetzel, K. P. Dharmasena, R. Radovitzky, and H. N. G. Wadley"
+  year: 2011
+  status: "published"
+  type: "journal"
+  venue: "International Journal of Impact Engineering"
+  volume: "38"
+  number: "10"
+  pages: "837–848"
+  doi: "10.1016/j.ijimpeng.2011.05.010"
+  key: "rimoli2011jc"
+  bibtex: |
+    @article{rimoli2011jc,
+    title = "Wet-sand impulse loading of metallic plates and corrugated core sandwich panels",
+    journal = "International Journal of Impact Engineering",
+    volume = "38",
+    number = "10",
+    pages = "837--848",
+    year = "2011",
+    note = "",
+    author = {J.~J.~Rimoli and B.~Talamini and J.~J.~Wetzel and K.~P.~Dharmasena and R.~Radovitzky and H.~N.~G.~Wadley},
+    keywords = "Sandwich panels",
+    keywords = "Blast loading",
+    keywords = "Impulse mitigation",
+    doi = {10.1016/j.ijimpeng.2011.05.010}
+    }
+- title: "A duality-based method for generating geometric representations of polycrystals"
+  authors: "J. J. Rimoli and M. Ortiz"
+  authors_html: "<strong>J. J. Rimoli</strong> and M. Ortiz"
+  year: 2011
+  status: "published"
+  type: "journal"
+  venue: "International Journal for Numerical Methods in Engineering"
+  volume: "86"
+  number: "9"
+  pages: "1069–1081"
+  doi: "10.1002/nme.3090"
+  key: "rimoli2011jb"
+  bibtex: |
+    @Article{rimoli2011jb,
+      author = {J.~J.~Rimoli and M.~Ortiz},
+    title = {A duality-based method for generating geometric representations of polycrystals},
+    journal = {International Journal for Numerical Methods in Engineering},
+    volume = {86},
+    number = {9},
+    publisher = {John Wiley & Sons, Ltd.},
+    pages = {1069--1081},
+    keywords = {polycrystal, dual complex, grain boundary energy relaxation},
+    year = {2011},
+    doi = {10.1002/nme.3090}
+    }
+- title: "Nonlocal Superelastic Model of Size-Dependent Hardening and Dissipation in Single Crystal Cu-Al-Ni Shape Memory Alloys"
+  authors: "L. Qiao, J. J. Rimoli, Y. Chen, C. A. Schuh, and R. Radovitzky"
+  authors_html: "L. Qiao, <strong>J. J. Rimoli</strong>, Y. Chen, C. A. Schuh, and R. Radovitzky"
+  year: 2011
+  status: "published"
+  type: "journal"
+  venue: "Physical Review Letters"
+  volume: "106"
+  number: "8"
+  pages: "085504"
+  doi: "10.1103/physrevlett.106.085504"
+  key: "qiao2011ja"
+  bibtex: |
+    @Article{qiao2011ja,
+      author =    {L.~Qiao and J.~J.~Rimoli and Y.~Chen and C.~A.~Schuh and R.~Radovitzky},
+      title =    {Nonlocal Superelastic Model of Size-Dependent Hardening and Dissipation in Single Crystal {C}u-{A}l-{N}i Shape Memory Alloys},
+      journal =    {Physical Review Letters},
+     volume = {106},
+      number = {8},
+      pages = {085504},
+      numpages = {4},
+      year = {2011},
+      publisher = {American Physical Society},
+      doi = {10.1103/physrevlett.106.085504}
+    }
+- title: "A three-dimensional multiscale model of intergranular hydrogen-assisted cracking"
+  authors: "J. J. Rimoli and M. Ortiz"
+  authors_html: "<strong>J. J. Rimoli</strong> and M. Ortiz"
+  year: 2010
+  status: "published"
+  type: "journal"
+  venue: "Philosophical Magazine"
+  volume: "90"
+  number: "21"
+  pages: "2939–2963"
+  doi: "10.1080/14786431003752134"
+  award: "James Clerk Maxwell Young Writers Prize"
+  key: "rimoli2010jb"
+  bibtex: |
+    @Article{rimoli2010jb,
+      author = {J.~J.~Rimoli and M.~Ortiz},
+      title = {A three-dimensional multiscale model of intergranular hydrogen-assisted cracking},
+      journal = {Philosophical Magazine},
+      volume = {90},
+      number = {21},
+      pages ={2939--2963},
+      year = {2010},
+      doi = {10.1080/14786431003752134}
+    }
+- title: "Shock-induced subgrain microstructures as possible homogenous sources of hot spots and initiation sites in energetic polycrystals"
+  authors: "J. J. Rimoli, E. Gürses, and M. Ortiz"
+  authors_html: "<strong>J. J. Rimoli</strong>, E. Gürses, and M. Ortiz"
+  year: 2010
+  status: "published"
+  type: "journal"
+  venue: "Physical Review B"
+  volume: "81"
+  number: "1"
+  pages: "014112"
+  doi: "10.1103/physrevb.81.014112"
+  key: "rimoli2010ja"
+  bibtex: |
+    @Article{rimoli2010ja,
+      title = {Shock-induced subgrain microstructures as possible homogenous sources of hot spots and initiation sites in energetic polycrystals},
+      author = {J.~J.~Rimoli and E.~G\"urses and M.~Ortiz},
+      journal = {Physical Review B},
+      volume = {81},
+      number = {1},
+      pages = {014112},
+      numpages = {11},
+      year = {2010},
+      publisher = {American Physical Society},
+      doi = {10.1103/physrevb.81.014112}
+    }

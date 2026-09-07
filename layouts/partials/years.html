@@ -1,0 +1,3 @@
+{{- /* "2017–2023" when both years are known, "2021" when only the leaving year is. */ -}}
+{{- if and .Params.year_joined .Params.year_left }}{{ .Params.year_joined }}&ndash;{{ .Params.year_left }}
+{{- else }}{{ with .Params.year_left }}{{ . }}{{ else }}{{ with .Params.year_joined }}since {{ . }}{{ end }}{{ end }}{{ end -}}

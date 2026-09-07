@@ -1,0 +1,1236 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #2b6cb0;   /* deep blue: white text and light backgrounds pass WCAG AA */
+    --accent-color: #e74c3c;
+    --text-color: #333;
+    --text-light: #666;
+    --bg-color: #fff;
+    --bg-light: #f8f9fa;
+    --border-color: #e0e0e0;
+    --max-width: 1200px;
+    --spacing-unit: 1rem;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+/* Navigation */
+.navbar {
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+    color: #bfdbfe;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.nav-links a.active {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+}
+
+/* Container */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero-with-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 8rem 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero .lead {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Home Sections */
+.home-section {
+    margin: 4rem 0;
+}
+
+.home-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+/* Research Grid */
+.research-grid {
+    display: grid;
+    /* auto-fill keeps cards the same width whether there is one card or six */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.research-card {
+    background: var(--bg-light);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.research-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.research-card img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.research-card h3 {
+    padding: 1rem;
+    color: var(--primary-color);
+}
+
+.research-card h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.research-card p {
+    padding: 0 1rem 1rem;
+    color: var(--text-light);
+}
+
+.research-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.research-section {
+    margin: 3rem 0;
+}
+
+.research-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.past-projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.past-project-item {
+    padding: 1.5rem;
+    background: var(--bg-light);
+    border-radius: 8px;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.past-project-item h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--primary-color);
+}
+
+.past-project-item h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.past-project-item h3 a:hover {
+    color: var(--secondary-color);
+}
+
+.project-funding {
+    margin: 0;
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+/* Team Section */
+.team-section {
+    margin: 3rem 0;
+}
+
+.team-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.member-card {
+    display: block;
+    background: var(--bg-light);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.member-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.member-photo-placeholder {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0 auto 1rem;
+}
+
+.member-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.member-card .role {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.member-card .email {
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+}
+
+/* Alumni List */
+.alumni-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.alumni-item {
+    padding: 1rem;
+    background: var(--bg-light);
+    border-radius: 8px;
+}
+
+.alumni-item a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.alumni-item a:hover {
+    text-decoration: underline;
+}
+
+.alumni-degree, .alumni-years {
+    color: var(--text-light);
+    margin-left: 0.5rem;
+}
+
+.alumni-current {
+    margin-top: 0.5rem;
+    color: var(--text-color);
+}
+
+/* Person Page */
+.person-page {
+    margin: 3rem auto;
+}
+
+.person-header {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.person-photo-large {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.person-info h1 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.person-info .role {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+.person-info .alumni-status {
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+.person-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.link-button {
+    padding: 0.5rem 1rem;
+    background: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.link-button:hover {
+    background: var(--primary-color);
+}
+
+.interests, .bio, .thesis {
+    margin: 2rem 0;
+}
+
+.interests h2, .bio h2, .thesis h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.interests ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.interests li {
+    background: var(--bg-light);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+}
+
+/* Publications */
+.publications-year {
+    margin: 3rem 0;
+}
+
+.publications-year h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.publication {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background: var(--bg-light);
+    border-radius: 8px;
+}
+
+.pub-title {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.pub-authors {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.pub-venue {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.award {
+    background: var(--accent-color);
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    margin-left: 0.5rem;
+}
+
+.pub-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.pub-link {
+    padding: 0.4rem 0.8rem;
+    background: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.pub-link:hover {
+    background: var(--primary-color);
+}
+
+.pub-abstract, .bibtex {
+    margin-top: 1rem;
+}
+
+.pub-abstract summary, .bibtex summary {
+    cursor: pointer;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.bibtex pre {
+    background: white;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin-top: 0.5rem;
+}
+
+/* News */
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.news-item {
+    padding: 1.5rem;
+    background: var(--bg-light);
+    border-radius: 8px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.news-image {
+    flex-shrink: 0;
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.news-item:hover .news-image img {
+    transform: scale(1.05);
+}
+
+.news-content {
+    flex: 1;
+}
+
+.news-item h2, .news-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.news-item h2 a, .news-item h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.news-item h2 a:hover, .news-item h3 a:hover {
+    color: var(--secondary-color);
+}
+
+.post-meta {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.post-meta .author {
+    margin-left: 1rem;
+}
+
+.post-featured-image {
+    margin: 2rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.post-featured-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Teaching */
+.teaching-section {
+    margin: 3rem 0;
+}
+
+.teaching-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.course {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--bg-light);
+    border-radius: 8px;
+}
+
+.course h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.course-meta {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.course-link {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.course-link:hover {
+    text-decoration: underline;
+}
+
+.past-courses {
+    list-style: none;
+}
+
+.past-courses li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Research Page */
+.research-area {
+    margin: 3rem 0;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.research-area:last-child {
+    border-bottom: none;
+}
+
+.research-area h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.research-area h2 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.research-area h2 a:hover {
+    color: var(--secondary-color);
+}
+
+.research-preview-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.research-team {
+    color: var(--text-light);
+    margin-top: 1rem;
+}
+
+/* Utility Classes */
+.page-intro {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.view-all, .read-more {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.view-all:hover, .read-more:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Header becomes a compact, non-sticky block: logo on top, links in a wrapping row */
+    .navbar {
+        position: static;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 0.25rem 1.25rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-with-image {
+        padding: 4rem 0;
+    }
+
+    .person-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .research-grid, .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .news-item {
+        flex-direction: column;
+    }
+
+    .news-image {
+        width: 100%;
+        height: 200px;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+}
+
+/* ------------------------------------------------------------------ */
+/* Base elements and accessibility                                     */
+/* ------------------------------------------------------------------ */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: var(--secondary-color);
+}
+
+:focus-visible {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 2px;
+}
+
+.navbar a:focus-visible,
+footer a:focus-visible,
+.hero a:focus-visible {
+    outline-color: #bfdbfe;
+}
+
+/* Skip link: hidden until a keyboard user tabs to it */
+.skip-link {
+    position: absolute;
+    left: 1rem;
+    top: -4rem;
+    z-index: 2000;
+    padding: 0.5rem 1rem;
+    background: var(--accent-color);
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 1rem;
+}
+
+main > .container > h1 {
+    margin: 2rem 0 1rem;
+    color: var(--primary-color);
+}
+
+/* ------------------------------------------------------------------ */
+/* Typography for page text written in Markdown                        */
+/* (research pages, news posts, About text, biographies)               */
+/* ------------------------------------------------------------------ */
+.content p,
+.content ul,
+.content ol,
+.content blockquote,
+.content pre,
+.content table,
+.post-content p,
+.post-content ul,
+.post-content ol,
+.post-content blockquote,
+.post-content pre {
+    margin-bottom: 1rem;
+}
+
+.content ul,
+.content ol,
+.post-content ul,
+.post-content ol,
+.team-members ul,
+.funding ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.content h2,
+.post-content h2,
+.team-members h2,
+.funding h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin: 2rem 0 0.75rem;
+}
+
+.content h3,
+.post-content h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0.5rem;
+}
+
+.content img,
+.post-content img {
+    display: block;
+    margin: 1.5rem auto;
+    border-radius: 8px;
+}
+
+.content blockquote,
+.post-content blockquote {
+    border-left: 4px solid var(--secondary-color);
+    padding-left: 1rem;
+    color: var(--text-light);
+}
+
+.content pre,
+.post-content pre {
+    background: var(--bg-light);
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+.content table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.content th,
+.content td {
+    border: 1px solid var(--border-color);
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.research-description {
+    font-size: 1.1rem;
+    margin: 1rem 0 1.5rem;
+}
+
+.research-description p {
+    margin-bottom: 1rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* Small page-specific touches                                         */
+/* ------------------------------------------------------------------ */
+.page-404 {
+    padding: 4rem 0;
+}
+
+.pub-authors strong {
+    color: var(--primary-color);
+}
+
+.member-card .email a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.member-card .email a:hover {
+    text-decoration: underline;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* Home page: news and publications columns, call to action           */
+/* ------------------------------------------------------------------ */
+.home-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+    margin: 4rem 0;
+}
+
+.home-columns .home-section {
+    margin: 0;
+}
+
+.home-columns .home-section h2 {
+    font-size: 1.5rem;
+}
+
+.home-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.home-list-item time,
+.home-list-meta {
+    display: block;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.home-list-item h3 {
+    font-size: 1.05rem;
+    line-height: 1.4;
+    margin: 0.15rem 0 0.25rem;
+    color: var(--primary-color);
+}
+
+.home-list-item h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.home-list-item h3 a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.home-list-item p {
+    margin: 0;
+}
+
+.home-list-meta strong {
+    color: var(--primary-color);
+}
+
+.home-cta {
+    margin: 4rem 0 2rem;
+    padding: 2rem;
+    background: var(--bg-light);
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* Keep anchored targets clear of the sticky header */
+.publication,
+[id] {
+    scroll-margin-top: 5rem;
+}
+
+/* Category labels at the end of a news post */
+.post-categories {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.post-categories .category {
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    text-transform: capitalize;
+}
+
+/* Alumni grouped by degree, laid out as a compact grid */
+.alumni-group {
+    margin-bottom: 2.5rem;
+}
+
+.alumni-group h3 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.alumni-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1rem;
+}
+
+.alumni-item .alumni-years {
+    margin-left: 0.5rem;
+    color: var(--text-light);
+}
+
+.alumni-item .alumni-degree {
+    display: block;
+    margin: 0.25rem 0 0;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.alumni-item .alumni-current {
+    font-size: 0.95rem;
+}
+
+.research-topic {
+    margin: 2rem 0;
+}
+
+.research-topic h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.degrees {
+    margin-bottom: 0.5rem;
+}
+
+/* Award badges may be long ("Most downloaded ..."), let them wrap */
+.award {
+    display: inline-block;
+    line-height: 1.4;
+    margin-top: 0.25rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* Shared components: cards, pills, buttons                            */
+/* ------------------------------------------------------------------ */
+.card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.card {
+    background: var(--bg-light);
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.card time {
+    display: block;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.card-title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card-title a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.card p {
+    margin-bottom: 0.75rem;
+}
+
+/* Pills: research interests and news categories look the same */
+.interests li,
+.post-categories .category {
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 0.35rem 0.9rem;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    text-transform: none;
+}
+
+/* Buttons: person-page links and publication links share one size */
+.link-button,
+.pub-link {
+    display: inline-block;
+    padding: 0.45rem 0.9rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    border-radius: 4px;
+    background: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.link-button:hover,
+.pub-link:hover {
+    background: var(--primary-color);
+}
+
+/* Page titles inside article headers match the other page titles */
+.post-header h1 {
+    color: var(--primary-color);
+    margin: 2rem 0 0.5rem;
+}
+
+/* Publication titles link to the paper */
+.pub-title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.pub-title a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* Figures with captions inside page text */
+.content figure {
+    margin: 1.5rem 0 2rem;
+}
+
+.content figure img {
+    margin: 0 auto 0.5rem;
+}
+
+.content figcaption {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Truss Me! page: play area, store buttons */
+.trussme-page .page-intro {
+    margin-bottom: 1rem;
+}
+
+.app-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: 1.5rem 0 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%) center / cover no-repeat;
+}
+
+.app-frame iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.app-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.play-button {
+    padding: 0.8rem 1.6rem;
+    border: 0;
+    border-radius: 6px;
+    background: var(--accent-color);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.play-button:hover,
+.play-button:focus-visible {
+    background: #c0392b;
+}
+
+.app-coming {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.app-note {
+    margin: 0;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.app-actions {
+    margin: 0 0 1rem;
+}
+
+.store-links {
+    margin: 2rem 0;
+}
+
+.store-links h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.store-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.link-button.disabled {
+    background: var(--border-color);
+    color: var(--text-light);
+    cursor: default;
+}

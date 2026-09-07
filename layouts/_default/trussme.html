@@ -1,0 +1,50 @@
+{{ define "main" }}
+<div class="container trussme-page">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.description }}<p class="page-intro">{{ . }}</p>{{ end }}
+
+    <div class="app-frame" id="app-frame"{{ with .Params.poster }} style="background-image: url('{{ partial "url.html" . }}');"{{ end }}>
+        <div class="app-overlay" id="app-overlay">
+            {{ if .Params.web_app }}
+            <button type="button" class="play-button" id="play-button" data-src="{{ partial "url.html" .Params.web_app }}">Play in your browser</button>
+            <p class="app-note">Best on a desktop browser. On a phone or tablet, use the apps below.</p>
+            {{ else }}
+            <p class="app-coming">Web version coming soon</p>
+            <p class="app-note">The new release will run right here in your browser.</p>
+            {{ end }}
+        </div>
+    </div>
+    {{ with .Params.web_app }}
+    <p class="app-actions"><a href="{{ partial "url.html" . }}" class="link-button" target="_blank" rel="noopener">Launch full screen</a></p>
+    {{ end }}
+
+    <section class="store-links">
+        <h2>Get the app</h2>
+        <div class="store-buttons">
+            {{ with .Params.app_store_url }}<a href="{{ . }}" class="link-button" target="_blank" rel="noopener">App Store (iOS)</a>{{ else }}<span class="link-button disabled">App Store (iOS): coming soon</span>{{ end }}
+            {{ with .Params.play_store_url }}<a href="{{ . }}" class="link-button" target="_blank" rel="noopener">Google Play (Android)</a>{{ else }}<span class="link-button disabled">Google Play (Android): coming soon</span>{{ end }}
+        </div>
+    </section>
+
+    <div class="content">
+        {{ .Content }}
+    </div>
+</div>
+<script>
+(function () {
+    var button = document.getElementById('play-button');
+    if (!button) { return; }
+    button.addEventListener('click', function () {
+        var frame = document.getElementById('app-frame');
+        var iframe = document.createElement('iframe');
+        iframe.src = button.getAttribute('data-src');
+        iframe.title = 'Truss Me!';
+        iframe.setAttribute('allow', 'fullscreen');
+        iframe.setAttribute('allowfullscreen', '');
+        frame.innerHTML = '';
+        frame.appendChild(iframe);
+        frame.classList.add('is-playing');
+    });
+})();
+</script>
+{{ end }}

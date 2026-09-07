@@ -1,0 +1,9 @@
+{{- /* Site-relative URL for a path from front matter or content ("/images/x.jpg", "/team/").
+       Strips the leading slash so relURL adds the site's base path when the site is
+       served from a sub-folder. Absolute URLs pass through unchanged. */ -}}
+{{- $u := . -}}
+{{- if or (hasPrefix $u "http://") (hasPrefix $u "https://") (hasPrefix $u "//") (hasPrefix $u "mailto:") -}}
+{{- $u -}}
+{{- else -}}
+{{- relURL (strings.TrimPrefix "/" $u) -}}
+{{- end -}}

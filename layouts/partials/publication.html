@@ -1,0 +1,32 @@
+{{/* One publication entry. Context: a map from data/publications.yml. */}}
+{{- $href := "" }}
+{{- with .doi }}{{ $href = printf "https://doi.org/%s" . }}{{ else }}{{ with .url }}{{ $href = . }}{{ end }}{{ end }}
+<article class="publication"{{ with .key }} id="{{ . }}"{{ end }}>
+    <h3 class="pub-title">{{ if $href }}<a href="{{ $href }}" target="_blank" rel="noopener">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}</h3>
+    <p class="pub-authors">{{ with .authors_html }}{{ . | safeHTML }}{{ else }}{{ .authors }}{{ end }}</p>
+    <p class="pub-venue">
+        <em>{{ .venue }}</em>{{ with .volume }} {{ . }}{{ end }}{{ with .number }}({{ . }}){{ end }}{{ with .pages }}, {{ . }}{{ end }}{{ if eq .status "published" }} ({{ .year }}){{ else }} ({{ .status }}){{ end }}
+        {{ with .award }}<span class="award">{{ . }}</span>{{ end }}
+    </p>
+
+    {{ with .abstract }}
+    <details class="pub-abstract">
+        <summary>Abstract</summary>
+        <p>{{ . }}</p>
+    </details>
+    {{ end }}
+
+    <div class="pub-links">
+        {{ with .pdf }}<a href="{{ partial "url.html" . }}" class="pub-link">PDF</a>{{ end }}
+        {{ with .doi }}<a href="https://doi.org/{{ . }}" class="pub-link" target="_blank" rel="noopener">DOI</a>{{ end }}
+        {{ with .url }}<a href="{{ . }}" class="pub-link" target="_blank" rel="noopener">{{ $.url_label | default "Link" }}</a>{{ end }}
+        {{ with .code }}<a href="{{ . }}" class="pub-link" target="_blank" rel="noopener">Code</a>{{ end }}
+        {{ with .project_page }}<a href="{{ . }}" class="pub-link" target="_blank" rel="noopener">Project</a>{{ end }}
+        {{ with .bibtex }}
+        <details class="bibtex">
+            <summary>BibTeX</summary>
+            <pre><code>{{ . }}</code></pre>
+        </details>
+        {{ end }}
+    </div>
+</article>

@@ -1,0 +1,9 @@
+{{/* Renders one group of current members. Expects a dict with "title" and "pages". */}}
+{{ if .pages }}
+<section class="team-section">
+    <h2>{{ .title }}</h2>
+    <div class="team-grid">
+        {{ range .pages }}{{ partial "member-card.html" . }}{{ end }}
+    </div>
+</section>
+{{ end }}

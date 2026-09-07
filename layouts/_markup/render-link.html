@@ -1,0 +1,8 @@
+{{- $dest := .Destination -}}
+{{- if and (hasPrefix $dest "/") (not (hasPrefix $dest "//")) -}}
+  {{- $path := $dest -}}{{- $frag := "" -}}
+  {{- with findRE "#.*$" $dest -}}{{- $frag = index . 0 -}}{{- $path = strings.TrimSuffix $frag $dest -}}{{- end -}}
+  {{- $dest = printf "%s%s" (partial "url.html" $path) $frag -}}
+{{- end -}}
+<a href="{{ $dest | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if hasPrefix $dest "http" }} target="_blank" rel="noopener"{{ end }}>{{ .Text | safeHTML }}</a>
+{{- /* keep on one line */ -}}

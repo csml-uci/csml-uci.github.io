@@ -1,0 +1,16 @@
+{{/* One group of alumni. Expects a dict with "title" and "pages". */}}
+{{ if .pages }}
+<div class="alumni-group">
+    <h3>{{ .title }}</h3>
+    <div class="alumni-list">
+        {{ range .pages }}
+        <div class="alumni-item">
+            <a href="{{ .Permalink }}"><strong>{{ .Title }}</strong></a>
+            <span class="alumni-years">{{ partial "years.html" . }}</span>
+            {{ with .Params.degrees }}<span class="alumni-degree">{{ . }}</span>{{ end }}
+            {{ with .Params.current_position }}<p class="alumni-current">{{ . }}</p>{{ end }}
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

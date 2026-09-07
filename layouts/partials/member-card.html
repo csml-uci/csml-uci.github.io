@@ -1,0 +1,12 @@
+<div class="team-member">
+    <a href="{{ .Permalink }}" class="member-card">
+        {{ with .Params.image }}
+        <img src="{{ partial "url.html" . }}" alt="{{ $.Title }}" class="member-photo" loading="lazy">
+        {{ else }}
+        <div class="member-photo-placeholder" aria-hidden="true">{{ substr .Title 0 1 }}</div>
+        {{ end }}
+        <h3>{{ .Title }}</h3>
+        <p class="role">{{ .Params.role }}</p>
+        {{ with .Params.email }}<p class="email">{{ . }}</p>{{ end }}
+    </a>
+</div>

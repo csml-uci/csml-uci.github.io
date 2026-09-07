@@ -1,0 +1,80 @@
+{{ define "main" }}
+<div class="hero{{ if .Params.hero_image }} hero-with-image{{ end }}"{{ with .Params.hero_image }} style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ partial "url.html" . }}');"{{ end }}>
+    <div class="container">
+        <h1>{{ .Site.Params.lab_name }}</h1>
+        <p class="lead">{{ .Site.Params.description }}</p>
+    </div>
+</div>
+
+<div class="container">
+    <section class="home-section">
+        <h2>About Us</h2>
+        <div class="content">
+            {{ .Content }}
+        </div>
+    </section>
+
+    {{/* Research areas: every research page unless active is false, ordered by "order". */}}
+    {{ $research := where .Site.RegularPages "Type" "research" }}
+    {{ $research = where $research "Params.active" "ne" false }}
+    {{ $research = sort $research "Params.order" }}
+    {{ if $research }}
+    <section class="home-section">
+        <h2>Recent Research Projects</h2>
+        <div class="research-grid">
+            {{ range first 3 $research }}
+            <div class="research-card">
+                {{ with .Params.image }}
+                <img src="{{ partial "url.html" . }}" alt="" loading="lazy">
+                {{ end }}
+                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                <p>{{ .Params.description | plainify | truncate 150 }}</p>
+            </div>
+            {{ end }}
+        </div>
+        <a href="{{ "research/" | relURL }}" class="view-all">All research projects</a>
+    </section>
+    {{ end }}
+
+    {{/* Two columns on wide screens, stacked on phones: latest news and newest papers. */}}
+    {{ $news := (where .Site.RegularPages "Type" "news").ByDate.Reverse }}
+    {{ $pubs := first 3 (where .Site.Data.publications "status" "published") }}
+    <div class="home-columns">
+        {{ if $news }}
+        <section class="home-section">
+            <h2>Recent News</h2>
+            <ul class="home-list">
+                {{ range first 3 $news }}
+                <li class="home-list-item">
+                    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+                    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                    <p>{{ .Summary | plainify | truncate 140 }}</p>
+                </li>
+                {{ end }}
+            </ul>
+            <a href="{{ "news/" | relURL }}" class="view-all">All news</a>
+        </section>
+        {{ end }}
+
+        {{ if $pubs }}
+        <section class="home-section">
+            <h2>Recent Publications</h2>
+            <ul class="home-list">
+                {{ range $pubs }}
+                <li class="home-list-item">
+                    <h3><a href="{{ "publications/" | relURL }}#{{ .key }}">{{ .title }}</a></h3>
+                    <p class="home-list-meta">{{ with .authors_html }}{{ . | safeHTML }}{{ else }}{{ .authors }}{{ end }}</p>
+                    <p class="home-list-meta"><em>{{ .venue }}</em> ({{ .year }})</p>
+                </li>
+                {{ end }}
+            </ul>
+            <a href="{{ "publications/" | relURL }}" class="view-all">All publications</a>
+        </section>
+        {{ end }}
+    </div>
+
+    <section class="home-cta">
+        <p>Interested in joining the lab? <a href="{{ "team/" | relURL }}">Meet the team</a> and get in touch at <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>.</p>
+    </section>
+</div>
+{{ end }}

@@ -1,0 +1,68 @@
+{{ define "main" }}
+<div class="container">
+    <h1>{{ .Title }}</h1>
+    {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
+
+    <section class="team-section">
+        <h2>Principal Investigator</h2>
+        <div class="team-grid">
+            {{ $pi := index (where .Site.RegularPages "Params.status" "pi") 0 }}
+            <div class="team-member">
+                {{ if $pi }}
+                <a href="{{ $pi.Permalink }}" class="member-card">
+                    <img src="{{ partial "url.html" ($pi.Params.image | default .Site.Params.pi_image) }}" alt="{{ $pi.Title }}" class="member-photo">
+                    <h3>{{ $pi.Title }}</h3>
+                    <p class="role">Principal Investigator</p>
+                    {{ with $pi.Params.email }}<p class="email">{{ . }}</p>{{ end }}
+                </a>
+                {{ else }}
+                <div class="member-card">
+                    <img src="{{ partial "url.html" (.Site.Params.pi_image | default "/images/team/pi.jpg") }}" alt="{{ .Site.Params.pi_name }}" class="member-photo">
+                    <h3>{{ .Site.Params.pi_name }}</h3>
+                    <p class="role">Principal Investigator</p>
+                    {{ with .Site.Params.email }}<p class="email"><a href="mailto:{{ . }}">{{ . }}</a></p>{{ end }}
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+
+    {{/* Current members, grouped by role. Anyone whose role matches none of the
+         lists below still appears, under "Other Members", instead of vanishing. */}}
+    {{ $team := where .Site.RegularPages "Type" "team" }}
+    {{ $current := where $team "Params.status" "current" }}
+    {{ $current = sort $current "Params.year_joined" "asc" }}
+    {{ $staffRoles := slice "Postdoc" "Postdoctoral Researcher" "Postdoctoral Scholar" "Research Scientist" "Project Scientist" "Research Associate" "Research Engineer" "Visiting Scholar" "Visiting Researcher" }}
+    {{ $ugRoles := slice "Undergraduate Student" "Undergraduate Researcher" }}
+    {{ $staff := where $current "Params.role" "in" $staffRoles }}
+    {{ $phd := where $current "Params.role" "PhD Student" }}
+    {{ $ms := where $current "Params.role" "MS Student" }}
+    {{ $ug := where $current "Params.role" "in" $ugRoles }}
+    {{ $known := $staffRoles | append $ugRoles | append "PhD Student" "MS Student" }}
+    {{ $other := where $current "Params.role" "not in" $known }}
+
+    {{ partial "member-section.html" (dict "title" "Research Staff" "pages" $staff) }}
+    {{ partial "member-section.html" (dict "title" "PhD Students" "pages" $phd) }}
+    {{ partial "member-section.html" (dict "title" "MS Students" "pages" $ms) }}
+    {{ partial "member-section.html" (dict "title" "Undergraduate Students" "pages" $ug) }}
+    {{ partial "member-section.html" (dict "title" "Other Members" "pages" $other) }}
+
+    <section class="team-section">
+        <h2>Alumni</h2>
+        {{ $alumni := where $team "Params.status" "alumni" }}
+        {{ $alumni = sort $alumni "Params.year_left" "desc" }}
+        {{ $alumniStaff := where $alumni "Params.role" "in" $staffRoles }}
+        {{ $alumniPhd := where $alumni "Params.role" "PhD Student" }}
+        {{ $alumniMs := where $alumni "Params.role" "MS Student" }}
+        {{ $alumniOther := where $alumni "Params.role" "not in" $known }}
+        {{ if $alumni }}
+        {{ partial "alumni-group.html" (dict "title" "Postdoctoral Scholars" "pages" $alumniStaff) }}
+        {{ partial "alumni-group.html" (dict "title" "PhD Students" "pages" $alumniPhd) }}
+        {{ partial "alumni-group.html" (dict "title" "MS Students" "pages" $alumniMs) }}
+        {{ partial "alumni-group.html" (dict "title" "Other Alumni" "pages" $alumniOther) }}
+        {{ else }}
+        <p>No alumni listed.</p>
+        {{ end }}
+    </section>
+</div>
+{{ end }}

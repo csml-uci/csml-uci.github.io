@@ -1,0 +1,36 @@
+# Current Courses
+# Edit this section to add/update current courses
+
+current:
+  - title: "MAE 157 - Lightweight Structures"
+    level: "undergraduate"
+    description: |
+      Design and calculation of aerospace structures, with focus on semi-monocoque designs.
+
+  - title: "MAE 195/295 - Introduction to the Finite Element Method"
+    level: "undergraduate/graduate"
+    description: |
+      Project-based course on the fundamentals of the finite element method with application to stress analysis problems.
+
+# Past Courses
+# Edit this section to add/update past courses
+
+past_title: "Past Courses (at Georgia Tech)"
+past:
+
+  - title: "AE 6114 - Fundamentals of Solid Mechanics"
+    level: "graduate"
+    
+  - title: "AE 6104 - Computational Mechanics"
+    level: "graduate"
+    
+  - title: "AE 4132 - Finite Element Analysis"
+    level: "undergraduate"
+    
+  - title: "AE 3145 - Undergraduate Structures Laboratory"
+    level: "undergraduate"
+    
+  - title: "COE 2001 - Statics"
+    level: "undergraduate"
+    
+  

@@ -1,0 +1,41 @@
+{{ define "main" }}
+<div class="container research-page">
+    <h1>{{ .Title }}</h1>
+
+    {{ if .Params.image }}
+    <img src="{{ partial "url.html" .Params.image }}" alt="{{ .Title }}" class="research-image">
+    {{ end }}
+
+    {{ if .Params.description }}
+    <div class="research-description">
+        {{ .Params.description | markdownify }}
+    </div>
+    {{ end }}
+
+    {{ if .Params.team_members }}
+    <div class="team-members">
+        <h2>Team Members</h2>
+        <ul>
+        {{ range .Params.team_members }}
+            <li>{{ . }}</li>
+        {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+
+    {{ if .Params.funding }}
+    <div class="funding">
+        <h2>Funding</h2>
+        <ul>
+        {{ range .Params.funding }}
+            <li>{{ . }}</li>
+        {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+
+    <div class="content">
+        {{ .Content }}
+    </div>
+</div>
+{{ end }}

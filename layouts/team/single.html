@@ -1,0 +1,71 @@
+{{ define "main" }}
+<div class="container person-page">
+    <div class="person-header">
+        {{ with .Params.image }}
+        <img src="{{ partial "url.html" . }}" alt="{{ $.Title }}" class="person-photo-large">
+        {{ end }}
+        <div class="person-info">
+            <h1>{{ .Title }}</h1>
+            <p class="role">{{ .Params.role }}</p>
+            {{ if eq .Params.status "alumni" }}
+            <p class="alumni-status">Alumni ({{ partial "years.html" . }})</p>
+            {{ with .Params.degrees }}
+            <p class="degrees"><strong>Degrees:</strong> {{ . }}</p>
+            {{ end }}
+            {{ with .Params.current_position }}
+            <p class="current-position"><strong>Current position:</strong> {{ . }}</p>
+            {{ end }}
+            {{ else if ne .Params.status "pi" }}
+            {{ with .Params.year_joined }}<p class="joined">Joined {{ . }}</p>{{ end }}
+            {{ end }}
+
+            <div class="person-links">
+                {{ with .Params.email }}<a href="mailto:{{ . }}" class="link-button">Email</a>{{ end }}
+                {{ with .Params.website }}<a href="{{ . }}" class="link-button" target="_blank" rel="noopener">Website</a>{{ end }}
+                {{ with .Params.github }}<a href="https://github.com/{{ . }}" class="link-button" target="_blank" rel="noopener">GitHub</a>{{ end }}
+                {{ with .Params.scholar }}<a href="https://scholar.google.com/citations?user={{ . }}" class="link-button" target="_blank" rel="noopener">Google Scholar</a>{{ end }}
+                {{ with .Params.linkedin }}<a href="{{ . }}" class="link-button" target="_blank" rel="noopener">LinkedIn</a>{{ end }}
+                {{ range .Params.links }}<a href="{{ .url }}" class="link-button" target="_blank" rel="noopener">{{ .label }}</a>{{ end }}
+            </div>
+        </div>
+    </div>
+
+    {{ with .Params.research_topic }}
+    <div class="research-topic">
+        <h2>Research Topic</h2>
+        <p>{{ . }}</p>
+    </div>
+    {{ end }}
+
+    {{ with .Params.interests }}
+    <div class="interests">
+        <h2>Research Interests</h2>
+        <ul>
+        {{ range . }}
+            <li>{{ . }}</li>
+        {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+
+    {{ with .Params.bio }}
+    <div class="bio content">
+        <h2>Biography</h2>
+        {{ . | markdownify }}
+    </div>
+    {{ end }}
+
+    {{ with .Params.thesis_title }}
+    <div class="thesis">
+        <h2>Thesis</h2>
+        <p>{{ . }}</p>
+    </div>
+    {{ end }}
+
+    {{ with .Content }}
+    <div class="content">
+        {{ . }}
+    </div>
+    {{ end }}
+</div>
+{{ end }}
