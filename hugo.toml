@@ -1,6 +1,5 @@
-# Set baseURL to the site's final public address before deploying, keeping the
-# trailing slash, for example: baseURL = "https://csml.eng.uci.edu/"
-baseURL = ""
+# Public address of the site (GitHub Pages). Keep the trailing slash.
+baseURL = "https://csml-uci.github.io/"
 languageCode = "en-us"
 title = "Computational Solid Mechanics Lab @ UCI"
 

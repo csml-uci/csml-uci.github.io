@@ -1,8 +1,8 @@
 # Maintenance guide
 
 Every page is generated from files in `content/`, `data/`, and `static/`.
-Edit a file, save, and the preview updates. Run `./deploy.sh` and upload
-`public/` when you are done (see [README.md](README.md)).
+Edit a file, save, and the preview updates. Run `./publish.sh "what changed"`
+when you are done; GitHub rebuilds and publishes the site (see [README.md](README.md)).
 
 ## Team
 
@@ -183,14 +183,16 @@ send those headers.
 ## Site settings
 
 `hugo.toml` holds the lab name, university, department, PI name, PI photo,
-email, description, and the menu. `baseURL` must be set to the public address
-before the first deployment.
+email, description, the menu, and `baseURL`, the public address of the site.
 
 ## Troubleshooting
 
 - **A change does not appear in the preview.** Restart `hugo server`. It
   sometimes misses a burst of file changes.
 - **Styles look old in the browser.** Hard-refresh (Cmd+Shift+R).
+- **`./publish.sh` says nothing to publish.** Every change is already on
+  GitHub. If the live site still looks old, check the Actions tab for a failed
+  build, then hard-refresh the browser.
 - **`./deploy.sh` refuses to run.** Stop the preview server first.
 - **A person or project is missing from a list.** Check `status`, `role`, and
   `active` in the front matter, and that the file is not a draft.
