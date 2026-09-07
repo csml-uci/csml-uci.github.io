@@ -708,11 +708,21 @@ footer p {
     }
 
     .hero h1 {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        line-height: 1.3;
+        margin-bottom: 0.75rem;
+    }
+
+    .hero .lead {
+        font-size: 1.05rem;
     }
 
     .hero-with-image {
         padding: 2.5rem 0;
+    }
+
+    .home-section {
+        margin: 2.5rem 0;
     }
 
     .person-header {
