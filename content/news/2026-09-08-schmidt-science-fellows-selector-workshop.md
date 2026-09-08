@@ -1,5 +1,5 @@
 ---
-title: "Prof. Rimoli helps shape the selection of the next Schmidt Science Fellows"
+title: "Prof. Rimoli helps shape the selection of the next generation of interdisciplinary scientists"
 date: 2026-09-08
 categories: ["service"]
 ---
