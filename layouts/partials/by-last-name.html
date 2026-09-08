@@ -1,0 +1,10 @@
+{{- /* Returns the given pages sorted alphabetically by last name.
+       Uses the last_name front-matter field if present, otherwise the last word of the title. */ -}}
+{{- $items := slice -}}
+{{- range . -}}
+  {{- $last := .Params.last_name | default (index (last 1 (split .Title " ")) 0) -}}
+  {{- $items = $items | append (dict "key" (printf "%s %s" (lower $last) (lower .Title)) "page" .) -}}
+{{- end -}}
+{{- $out := slice -}}
+{{- range sort $items "key" -}}{{- $out = $out | append .page -}}{{- end -}}
+{{- return $out -}}

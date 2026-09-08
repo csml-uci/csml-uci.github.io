@@ -31,7 +31,6 @@
          lists below still appears, under "Other Members", instead of vanishing. */}}
     {{ $team := where .Site.RegularPages "Type" "team" }}
     {{ $current := where $team "Params.status" "current" }}
-    {{ $current = sort $current "Params.year_joined" "asc" }}
     {{ $staffRoles := slice "Postdoc" "Postdoctoral Researcher" "Postdoctoral Scholar" "Research Scientist" "Project Scientist" "Research Associate" "Research Engineer" "Visiting Scholar" "Visiting Researcher" }}
     {{ $ugRoles := slice "Undergraduate Student" "Undergraduate Researcher" }}
     {{ $staff := where $current "Params.role" "in" $staffRoles }}
@@ -41,11 +40,11 @@
     {{ $known := $staffRoles | append $ugRoles | append "PhD Student" "MS Student" }}
     {{ $other := where $current "Params.role" "not in" $known }}
 
-    {{ partial "member-section.html" (dict "title" "Research Staff" "pages" $staff) }}
-    {{ partial "member-section.html" (dict "title" "PhD Students" "pages" $phd) }}
-    {{ partial "member-section.html" (dict "title" "MS Students" "pages" $ms) }}
-    {{ partial "member-section.html" (dict "title" "Undergraduate Students" "pages" $ug) }}
-    {{ partial "member-section.html" (dict "title" "Other Members" "pages" $other) }}
+    {{ partial "member-section.html" (dict "title" "Research Staff" "pages" (partial "by-last-name.html" $staff)) }}
+    {{ partial "member-section.html" (dict "title" "PhD Students" "pages" (partial "by-last-name.html" $phd)) }}
+    {{ partial "member-section.html" (dict "title" "MS Students" "pages" (partial "by-last-name.html" $ms)) }}
+    {{ partial "member-section.html" (dict "title" "Undergraduate Students" "pages" (partial "by-last-name.html" $ug)) }}
+    {{ partial "member-section.html" (dict "title" "Other Members" "pages" (partial "by-last-name.html" $other)) }}
 
     <section class="team-section">
         <h2>Alumni</h2>

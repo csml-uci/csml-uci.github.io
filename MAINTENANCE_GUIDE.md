@@ -29,8 +29,10 @@ interests:
 ```
 
 Roles are grouped into sections on the team page (Research Staff, PhD
-Students, MS Students, Undergraduate Students). Any other role appears under
-"Other Members", so nobody disappears.
+Students, MS Students, Undergraduate Students), each listed alphabetically by
+last name. Any other role appears under "Other Members", so nobody disappears.
+If someone's last name is not the last word of their title, add
+`last_name: "..."` to their file.
 
 Moving someone to the alumni list: change `status` to `alumni` and add
 
