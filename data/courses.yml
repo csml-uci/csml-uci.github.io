@@ -12,6 +12,12 @@ current:
     description: |
       Project-based course on the fundamentals of the finite element method with application to stress analysis problems.
 
+  - title: "MAE 254 - Mechanics of Solids"
+    level: "graduate"
+    term: "Fall 2026"
+    description: |
+      Finite deformation kinematics; stress and strain measures; invariance in solid mechanics; objective rates; constitutive theory of elastic and inelastic solids; rate formulations; computational approaches; theories of plates and shells; applications to aerospace vehicles.
+
 # Past Courses
 # Edit this section to add/update past courses
 
