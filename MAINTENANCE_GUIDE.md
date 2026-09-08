@@ -55,7 +55,8 @@ links:
 ```
 
 The PI card links to `content/team/julian-rimoli.md`, which has
-`status: "pi"` and carries the biography in its body text.
+`status: "pi"`, a `short_role` shown on the card, and the biography in its
+body text.
 
 Photos: square JPG, 1000x1000 pixels, under 500 KB, saved as
 `static/images/team/first-last.jpg`. A member without a photo gets an initial

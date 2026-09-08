@@ -12,7 +12,7 @@
                 <a href="{{ $pi.Permalink }}" class="member-card">
                     <img src="{{ partial "url.html" ($pi.Params.image | default .Site.Params.pi_image) }}" alt="{{ $pi.Title }}" class="member-photo">
                     <h3>{{ $pi.Title }}</h3>
-                    <p class="role">Principal Investigator</p>
+                    <p class="role">{{ $pi.Params.short_role | default $pi.Params.role | default "Principal Investigator" }}</p>
                     {{ with $pi.Params.email }}<p class="email">{{ . }}</p>{{ end }}
                 </a>
                 {{ else }}

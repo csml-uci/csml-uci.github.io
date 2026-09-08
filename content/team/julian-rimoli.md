@@ -1,6 +1,7 @@
 ---
 title: "Julián J. Rimoli"
 role: "Dean's Professor and Chair, Department of Mechanical and Aerospace Engineering"
+short_role: "Dean's Professor and Chair of MAE"   # shown on the team page card
 status: "pi"
 image: "/images/team/pi.jpg"
 email: "jrimoli@uci.edu"
