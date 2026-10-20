@@ -4,7 +4,7 @@ layout: "trussme"
 description: "Truss Me! is an educational structural simulation app created by Prof. Rimoli that teaches structural mechanics as a game. It has been downloaded more than one million times in 150 countries and is used to teach structural mechanics in high schools and leading universities around the world."
 # Web version: copy the Unity WebGL build into static/trussme/app/ (so that
 # static/trussme/app/index.html exists) and set web_app to "/trussme/app/index.html".
-web_app: ""
+web_app: "/trussme/app/index.html"
 # Optional screenshot shown in the play area before the app loads, e.g. "/images/trussme/poster.jpg" (1600x900).
 poster: ""
 # Store links. Leave empty to show "coming soon".

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes">
+    <title>Truss Me!</title>
+    <meta name="description" content="Truss Me! teaches structural mechanics as a game: build the lightest structure that carries the load.">
+    <link rel="icon" type="image/png" href="TemplateData/favicon.png">
+    <link rel="apple-touch-icon" href="TemplateData/apple-touch-icon.png">
+    <link rel="stylesheet" href="TemplateData/style.css">
+  </head>
+  <body>
+    <canvas id="unity-canvas" tabindex="-1"></canvas>
+    <div id="loader">
+      <img id="loader-icon" src="TemplateData/icon.png" alt="">
+      <div id="loader-title">Truss Me!</div>
+      <div id="loader-bar"><div id="loader-fill"></div></div>
+      <div id="loader-text"></div>
+    </div>
+    <script>
+      // Truss Me! web player. The canvas fills the window (or the frame it is embedded in); progress, designs
+      // and challenges are kept in this browser (Application.persistentDataPath, synced to IndexedDB).
+      var spanish = (navigator.language || "").toLowerCase().indexOf("es") === 0;
+      var loaderText = document.querySelector("#loader-text");
+      loaderText.textContent = spanish ? "Cargando…" : "Loading…";
+
+      function showError(message) {
+        document.querySelector("#loader").classList.add("failed");
+        loaderText.textContent = (spanish ? "Truss Me no pudo iniciar: " : "Truss Me could not start: ") + message;
+      }
+
+      var buildUrl = "Build";
+      var config = {
+        arguments: [],
+        dataUrl: buildUrl + "/4b622378055520c7bce62826dbf965d1.data.unityweb",
+        frameworkUrl: buildUrl + "/af66007b5dfae72d9f309c4494c4665a.framework.js.unityweb",
+        codeUrl: buildUrl + "/0e523a2fa7807692c4d67d480e5380ec.wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Julian Rimoli",
+        productName: "Truss Me!",
+        productVersion: "2.0.0",
+        // Every write to persistentDataPath (the profile, saved challenges) reaches IndexedDB by itself.
+        autoSyncPersistentDataPath: true,
+        showBanner: function (message, type) {
+          if (type === "error") showError(message);
+          else console.warn(message);
+        },
+      };
+
+      var script = document.createElement("script");
+      script.src = buildUrl + "/aa7eb2781ca20484a6f30ea91f1215f0.loader.js";
+      script.onload = function () {
+        var fill = document.querySelector("#loader-fill");
+        createUnityInstance(document.querySelector("#unity-canvas"), config, function (progress) {
+          fill.style.width = Math.round(100 * progress) + "%";
+        }).then(function () {
+          document.querySelector("#loader").style.display = "none";
+        }).catch(function (message) {
+          showError(String(message));
+        });
+      };
+      script.onerror = function () { showError(spanish ? "no se pudo descargar." : "the download failed."); };
+      document.body.appendChild(script);
+    </script>
+  </body>
+</html>

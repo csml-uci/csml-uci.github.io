@@ -1,0 +1,82 @@
+/* Truss Me! web player page: the canvas fills the window; colours follow the game (Resources/UI/Hud.uss). */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #F4F5F7;
+  color: #1F2430;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+#unity-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  outline: none;
+  background: #F4F5F7;
+  touch-action: none;
+}
+
+#loader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 16px;
+  background: #F4F5F7;
+  text-align: center;
+}
+
+#loader-icon {
+  width: 96px;
+  height: 96px;
+  border-radius: 22px;
+  box-shadow: 0 6px 20px rgba(31, 36, 48, 0.15);
+}
+
+#loader-title {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+#loader-bar {
+  width: min(280px, 70vw);
+  height: 8px;
+  border-radius: 4px;
+  background: #E1E4EA;
+  overflow: hidden;
+}
+
+#loader-fill {
+  width: 0;
+  height: 100%;
+  border-radius: 4px;
+  background: #F4761A;
+  transition: width 0.2s ease-out;
+}
+
+#loader-text {
+  max-width: 480px;
+  font-size: 15px;
+  color: #6B7280;
+}
+
+#loader.failed #loader-bar {
+  display: none;
+}
+
+#loader.failed #loader-text {
+  color: #E5484D;
+}
