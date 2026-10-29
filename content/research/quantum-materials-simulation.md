@@ -2,7 +2,7 @@
 title: "Quantum Computing for the Simulation of Heterogeneous Materials"
 short_name: "Quantum Simulation"
 image: "/images/research/quantum-simulation.png"
-order: 5
+order: 6
 active: true
 team_members:
   - "Sofia Brown"

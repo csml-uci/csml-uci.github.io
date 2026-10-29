@@ -2,7 +2,7 @@
 title: "Data-Driven Optimization of Advanced Casting Processes"
 short_name: "Casting Optimization"
 image: "/images/research/casting.png"
-order: 3
+order: 4
 active: true
 team_members:
   - "Agustín Cabaña"

@@ -2,7 +2,7 @@
 title: "Energetic Mesh Smoothing"
 short_name: "Mesh Smoothing"
 image: "/images/research/mesh-smoothing.jpg"
-order: 4
+order: 5
 active: true
 team_members:
   - "Kevin Garanger"

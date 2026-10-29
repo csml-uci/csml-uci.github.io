@@ -1,7 +1,7 @@
 ---
 title: "Predictive Discovery of Radiation-Resistant Tungsten Alloys for Extreme Fusion Environments"
 short_name: "Fusion Materials"
-order: 6
+order: 7
 active: true
 team_members:
   - "Prof. Penghui Cao (lead PI, UCI)"
