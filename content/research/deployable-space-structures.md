@@ -18,3 +18,5 @@ The next stage of space exploration requires building infrastructure in space: l
 ## Related publications
 
 - C. A. Gebara, P. D. Lytal, and J. J. Rimoli, *Additive Manufacturing of Compliant Mechanisms for Deployable Aerospace Structures*, Journal of Materials Engineering and Performance (2022). [Details](/publications/#gebara2022j)
+- J. J. Rimoli, *A reduced-order model for the dynamic and post-buckling behavior of tensegrity structures*, Mechanics of Materials (2018). [Details](/publications/#rimoli2018j)
+- J. J. Rimoli and R. K. Pal, *Mechanical response of 3-dimensional tensegrity lattices*, Composites Part B (2017). [Details](/publications/#rimoli2017ja)
