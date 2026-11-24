@@ -4,6 +4,7 @@ role: "MS Student"
 status: "alumni"
 year_joined: 2025
 year_left: 2026
+degrees: "MS 2026"
 image: "/images/team/abel-bernal.jpg"
 interests:
   - "Aerospace structures"
