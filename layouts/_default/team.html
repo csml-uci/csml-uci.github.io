@@ -55,7 +55,7 @@
         {{ $alumniMs := where $alumni "Params.role" "MS Student" }}
         {{ $alumniOther := where $alumni "Params.role" "not in" $known }}
         {{ if $alumni }}
-        {{ partial "alumni-group.html" (dict "title" "Postdoctoral Scholars" "pages" $alumniStaff) }}
+        {{ partial "alumni-group.html" (dict "title" "Postdoctoral Scholars and Research Staff" "pages" $alumniStaff) }}
         {{ partial "alumni-group.html" (dict "title" "PhD Students" "pages" $alumniPhd) }}
         {{ partial "alumni-group.html" (dict "title" "MS Students" "pages" $alumniMs) }}
         {{ partial "alumni-group.html" (dict "title" "Other Alumni" "pages" $alumniOther) }}
